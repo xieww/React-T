@@ -1,0 +1,7 @@
+node_modules
+.tmp
+.idea
+dist
+build
+mock
+npm-debug.log

@@ -1,0 +1,7 @@
+{
+    "name": "news-list",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./news-list.js"
+  }
+  

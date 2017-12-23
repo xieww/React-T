@@ -1,0 +1,7 @@
+{
+    "name": "news-nav",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./news-nav.js"
+}
+  

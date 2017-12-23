@@ -1,0 +1,7 @@
+{
+    "name": "edit-nav",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./edit-nav.js"
+}
+  
