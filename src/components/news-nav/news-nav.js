@@ -106,7 +106,7 @@ export default React.createClass({
                 <li key={index} 
                     className={classNames({'cur': index === this.state.selectedItem})}
                     onClick={this.changeNav}>
-                    <Link to='/detail' query={{id: 1}} style={{color:'#505050'}}>
+                    <Link to='/detail' query={{id: 1}}>
                         {item.text}
                     </Link>
                 </li>

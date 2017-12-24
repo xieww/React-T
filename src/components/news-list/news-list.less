@@ -17,6 +17,33 @@
         }
     }
 
+    .type0 {
+            font-size: 34px;
+            line-height: 42px;
+            color: #222;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-weight: normal;
+            padding-bottom: 10px;
+    }
+    .list_img_large {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        min-height: 3.75rem;
+        background-size: 108px;
+        
+        img {
+            border: none;
+            display: block;
+            width: 100%;
+            pointer-events: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
     .title {
         h3 {
             font-size: 34px;
@@ -60,7 +87,7 @@
                     // background: url(https://s3b.pstatp.com/growth/mobile_list/image/toutiaoicon_loading_textpage@3x_f7c130ce.png) #efefef no-repeat center center;
                     // background-size: 50%;
                     list-style-type: none;
-                    left: -15px;
+                    left: 0px;
        
                     img {
                         border: none;
@@ -78,61 +105,89 @@
         //     clear: both;
         // }
 
-        .item_info {
-            margin-top: 12px;
-            color: #999;
-            overflow: hidden;
-            // font-size: 0;
-            clear: both;
 
-            .labels {
-                width: 48px;
-                border: 1px solid rgba(248, 89, 89, 0.5);
-                border-radius: 4px;
-                color: #f85959;
-                font-size: 18px;
-                line-height: 24px;
-                margin-right: 10px;
-                display: inline-block;
-                text-align: center;
-            }
-            .srcSpace {
-                margin-right: 10px;
-                line-height: 24px;
-                font-size: 20px;
-                vertical-align: middle;
-                display: inline-block;
-            }
-            .cmtSpace {
-                margin-right: 10px;
-                line-height: 24px;
-                font-size: 20px;
-                vertical-align: middle;
-                display: inline-block;
-            }
-            .times {
-                line-height: 24px;
-                font-size: 20px;
-                vertical-align: middle;
-                display: inline-block;
-            }
+    }
+    .item_info {
+        margin-top: 12px;
+        color: #999;
+        overflow: hidden;
+        // font-size: 0;
+        clear: both;
+
+        .labels {
+            width: 48px;
+            border: 1px solid rgba(248, 89, 89, 0.5);
+            border-radius: 4px;
+            color: #f85959;
+            font-size: 18px;
+            line-height: 24px;
+            margin-right: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+        .srcSpace {
+            margin-right: 10px;
+            line-height: 24px;
+            font-size: 20px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .cmtSpace {
+            margin-right: 10px;
+            line-height: 24px;
+            font-size: 20px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .times {
+            line-height: 24px;
+            font-size: 20px;
+            vertical-align: middle;
+            display: inline-block;
         }
     }
     
-    // .main {
-    //     display: flex;
-    //     font-size: 30px;
-    // }
+    .main_l {
+        display: inline-block;
+        width: 67%;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .right_img {
+        overflow: hidden;
+        width: 33%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 1.96875rem;
+        position: relative;
 
-    // span {
-    //     flex: 1;
-    // }
+        img {
+            border: none;
+            display: block;
+            width: 100%;
+            -webkit-transition: opacity 300ms ease;
+            pointer-events: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+        }
+    }
 
-    // img {
-    //     width: 120px;
-    //     height: 120px;
-    // }
+    .RedBox {
+        position: fixed;
+        z-index: 8;
+        top: 50%;
+        right: 30px;;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: 0;
 
-
+        img {
+            width: 150px;
+            
+        }
+    }
 
 }
