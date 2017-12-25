@@ -1,0 +1,205 @@
+html, body, div, span, object, button, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.News_Details {
+
+
+    .news_content {
+        margin-top: 22px;
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        padding-left: 30px;
+        padding-right: 20px;
+        // padding-top: 80px;
+        top: 88px;
+        display: block;
+
+ 
+        .Details_1 {
+            position: relative;
+
+            .titles {
+                color: #000;
+                font-size: 42px;
+                line-height: 1.45;
+                font-weight: 600;
+            }
+            .author_info {
+                margin-top: 18px;
+
+                .avater {
+                    display: inline-block;
+                    height:58px;
+                    width: 58px;
+                    position: relative;
+
+                    .images {
+                        transition: opacity 200ms ease;
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 32px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .mask {
+                        background-color: rgba(34,34,34,0.05);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 32px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                .names {
+                    display: inline-block;
+                    margin-left: 16px;
+
+                    .srcName {
+                        color: #000;
+                        display: inline-block;
+                        font-weight: 600;
+                        font-size: 28px;
+                        vertical-align: top;
+                    }
+
+                    .times {
+                        display: inline-block;
+                        color: #999;
+                        font-size: 25px;
+                        vertical-align: top;
+                    }
+                    .dot {
+                        background-color: #999;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        margin-left: 6px;
+                        width: 2px;
+                        height: 2px;
+                        border-radius: 1px;
+                    }
+                    .comment {
+                        display: inline-block;
+                        vertical-align: top;
+                        color: #f85959;
+                        font-size: 25px;
+                    }
+                }
+                .btn {
+                    display: inline-block;
+                    float: right;
+                    text-align: center;
+                    height: 55px;
+                    width: 139px;
+                    border-radius: 2px;
+                    font-size: 29px;
+                    line-height: 55px;
+                    font-weight: 600;
+                    color: #fff;
+                    background-image: linear-gradient(to right, #f85959, #ff5050);
+                    text-decoration: none;
+                }
+            }
+        }
+        .Details_2 {
+            position: relative;
+            // height: 882px;
+            overflow: hidden;
+            clear: both;
+            padding-bottom: 74px;
+            // background: #FF7F50;
+
+            p {
+                color: #000;
+                word-wrap: break-word;
+                font-size: 36px;
+                line-height: 45px;
+                margin-top: 16px;
+                display: block;
+                outline: none;
+                max-height: 100%;
+            }
+            .bgimg {
+                background: url(https://s3b.pstatp.com/growth/mobile_detail/image/toutiaoicon_loading_textpage@3x.RQmcZRIc.png) no-repeat center center;
+                background-size: 40%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            span  {
+                word-wrap: break-word;
+                color: #000;
+                font-size: 36px;
+                line-height: 45px;
+            }
+            img {
+                opacity: 1;
+                width: 100%;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 4px;
+                margin-bottom: 4px;
+                transition: opacity 200ms ease;
+            }
+        }
+        .downloadApp {
+            position: relative;
+            text-align: center;
+            padding: 12px 0;
+
+            .lows {
+                position: absolute;
+                top: -98px;
+                height: 118px;
+                width: 100%;
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+            }
+            .lows:after {
+                content: '';
+                display: inline-block;
+                background-image: url(https://s3.pstatp.com/growth/mobile_detail/image/vwap_arrow_down.ky914xBY.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                vertical-align: middle;
+                margin-top: 45px;
+                height: 36px;
+                width: 36px;
+                animation: unfold-arrow-animation 300ms infinite alternate;
+            }
+            @keyframes unfold-arrow-animation {
+                from {left:0px;}
+                to {left:100px;}
+            }
+            .download_open {
+                display: block;
+                color: #fff;
+                background: #f85959;
+                width: 100%;
+                height: 65px;
+                border-radius: 8px;
+                font-size: 30px;
+                line-height: 65px;
+            }
+            .download_open:after {
+                content: '';
+                display: inline-block;
+                background-image: url(https://s3a.pstatp.com/growth/mobile_detail/image/vwap_arrow_right.c6HR7o8n.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                vertical-align: middle;
+                height: 28px;
+                width: 14px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+}

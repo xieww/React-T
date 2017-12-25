@@ -28,6 +28,19 @@ export default React.createClass({
                     type: 0
                 },
                 {
+                    title: '王珂不慎暴露破产的真实原因，网友：终于知道刘涛为何不离不弃了',
+                    labels: '娱乐',
+                    src: '乐乐里',
+                    cmt:'评论 252',
+                    times:'5小时前',
+                    img: [
+                        'https://p3.pstatp.com/large/50a50004135b29d4de18',
+                        'https://p3.pstatp.com/large/50a700014317c7f02244',
+                        'https://p3.pstatp.com/large/50a800012da73a6b0a72',
+                    ],
+                    type: 1
+                },
+                {
                     title: '亮眼！习近平新时代中国特色社会主义经济思想',
                     labels: '置顶',
                     src: '新华网',
@@ -179,9 +192,6 @@ export default React.createClass({
      * @desc  点击请求数据
      */
     clickHeader() {
-        console.log('**********1111***************');
-        console.log('list列表:' + this.state.list);
-        console.log('**********2222***************');
         const listItem = [{
             title: '赶快戳！30亿红包任意疯抢，只在平安财神节',
             labels: '广告',

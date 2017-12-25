@@ -5,6 +5,7 @@ import FastClick from 'fastclick';
 import { Router, Route, IndexRoute } from 'react-router';
 import App from './components/APP';
 import NewsDetail from './components/news-detail';
+import NewDetails from './components/NewDetails';
 
 window.React = React;
 
@@ -29,7 +30,7 @@ function bootstrap() {
     render(
         (<Router>
             <Route path="/" component={App}></Route>
-            <Route path="/detail" component={NewsDetail} />            
+            <Route path="/detail" component={NewDetails} />            
           </Router>), document.getElementById('react_container')
         );
 }
