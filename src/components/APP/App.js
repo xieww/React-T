@@ -51,6 +51,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/440800055fac69a73c61',
                     img2:'https://p3.pstatp.com/list/440800065ee7c6879793',
                     img3:'https://p3.pstatp.com/list/440600079a73eb436b39',
+                    img [
+                        'https://p3.pstatp.com/list/440800055fac69a73c61',
+                        'https://p3.pstatp.com/list/440800065ee7c6879793',
+                        'https://p3.pstatp.com/list/440600079a73eb436b39',
+                    ],
                     type: 1
                 },
                 {
@@ -68,6 +73,7 @@ export default React.createClass({
                     cmt:'评论 252',
                     times:'5小时前',
                     img1:'https://p3.pstatp.com/list/50a10003ae7fc02672fb',
+                    img:['https://p3.pstatp.com/list/50a10003ae7fc02672fb'],
                 },
                 {
                     title: '政法委书记收了下属送的情妇',
@@ -78,6 +84,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/50a100014a4f3c37c417',
                     img2:'https://p3.pstatp.com/list/509f000162802d8586d4',
                     img3:'https://p3.pstatp.com/list/509f00016342d9465d84',
+                    img:[
+                        'https://p3.pstatp.com/list/50a100014a4f3c37c417',
+                        'https://p3.pstatp.com/list/509f000162802d8586d4',
+                        'https://p3.pstatp.com/list/509f00016342d9465d84',
+                    ],
                     type: 1
                 },
                 {
@@ -87,6 +98,9 @@ export default React.createClass({
                     cmt:'评论 252',
                     times:'5小时前',
                     img1:'https://p3.pstatp.com/list/50a0000181130a688635',
+                    img:[
+                        'https://p3.pstatp.com/list/50a0000181130a688635',
+                    ],
                 },
                 {
                     title: '她天生血有剧毒，沾者死，直到有一天爹娘也因她而死',
@@ -95,6 +109,9 @@ export default React.createClass({
                     cmt:'评论 252',
                     times:'5小时前',
                     img1:'https://p3.pstatp.com/list/37f100009428744534de',
+                    img:[
+                        'https://p3.pstatp.com/list/37f100009428744534de',
+                    ]
                 },
                 {
                     title: '女人长期缺爱，身体扛不住了，才会有的三种异常反应！',
@@ -105,6 +122,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/47230002fc20dd04edbb',
                     img2:'https://p3.pstatp.com/list/47240002f87e3d0a4b81',
                     img3:'https://p3.pstatp.com/list/47240002f87e3d0a4b81',
+                    img:[
+                        'https://p3.pstatp.com/list/47230002fc20dd04edbb',
+                        'https://p3.pstatp.com/list/47240002f87e3d0a4b81',
+                        'https://p3.pstatp.com/list/47240002f87e3d0a4b81'
+                    ],
                     type: 1
                 },
                 {
@@ -126,6 +148,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/50a400008a5476f2c2e2',
                     img2:'https://p3.pstatp.com/list/50a1000280ba376fbeba',
                     img3:'https://p3.pstatp.com/list/50a50000279ceae84484',
+                    img:[
+                        'https://p3.pstatp.com/list/50a400008a5476f2c2e2',
+                        'https://p3.pstatp.com/list/50a1000280ba376fbeba',
+                        'https://p3.pstatp.com/list/50a50000279ceae84484'
+                    ],
                     type: 1
                 },
                 {
@@ -137,6 +164,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/5099000503286d67a247',
                     img2:'https://p3.pstatp.com/list/50990004fed3bb152d58',
                     img3:'https://p3.pstatp.com/list/509d0002cab87806317c',
+                    img:[
+                        'https://p3.pstatp.com/list/5099000503286d67a247',
+                        'https://p3.pstatp.com/list/50990004fed3bb152d58',
+                        'https://p3.pstatp.com/list/509d0002cab87806317c'
+                    ],
                     type: 1
                 },
                 {
@@ -148,6 +180,11 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/440800055fac69a73c61',
                     img2:'https://p3.pstatp.com/list/440800065ee7c6879793',
                     img3:'https://p3.pstatp.com/list/440600079a73eb436b39',
+                    img:[
+                        'https://p3.pstatp.com/list/440800055fac69a73c61',
+                        'https://p3.pstatp.com/list/440800065ee7c6879793',
+                        'https://p3.pstatp.com/list/440600079a73eb436b39'
+                    ],
                     type: 1
                 }
             ]
