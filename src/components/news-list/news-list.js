@@ -39,13 +39,16 @@ export default React.createClass({
                             <div className="item_img">
                                 <ul>
                                     <li className="list_image">
-                                        <img src={item.img1}/>
+                                        {/* <img src={item.img1}/> */}
+                                        <img src={item.img[0]}/>
                                     </li>
                                     <li className="list_image">
-                                        <img src={item.img2}/>
+                                        {/* <img src={item.img2}/> */}
+                                        <img src={item.img[1]}/>
                                     </li>
                                     <li className="list_image">
-                                        <img src={item.img3}/>
+                                        {/* <img src={item.img3}/> */}
+                                        <img src={item.img[2]}/>
                                     </li>
                                 </ul>
                             </div>
