@@ -99,6 +99,7 @@ export default React.createClass({
                         </div>
                         <div className="right_img">
                             <img src={item.img1} />
+                            {/* <img src={item.img[0]} /> */}
                         </div>
                     </div>
                 </Link>
