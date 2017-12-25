@@ -39,6 +39,7 @@ export default React.createClass({
                     cmt:'评论 252',
                     times:'5小时前',
                     img1:'http://p3.pstatp.com/large/3b4e000589a296678c32',
+                    img: ['http://p3.pstatp.com/large/3b4e000589a296678c32'],
                     type: 0
                 },
                 {
@@ -112,7 +113,8 @@ export default React.createClass({
                     src: '美溯集成墙板',
                     cmt:'评论 252',
                     times:'5小时前',
-                    img1:'http://p1.pstatp.com/large/4796000550e2d5c9d9bd',      
+                    img1:'http://p1.pstatp.com/large/4796000550e2d5c9d9bd', 
+                    img: ['http://p1.pstatp.com/large/4796000550e2d5c9d9bd'],     
                     type:0,          
                 },
                 {

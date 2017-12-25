@@ -9,7 +9,7 @@ export default React.createClass({
                 <span className="icon_mes">
                 <div className="circle"></div>
                 </span>
-                {/* <span className="title">今日头条</span> */}
+                {/* <span className="title">{this.props.title}</span> */}
                 <div className="t_cen">
                     <span className="title"></span>
                     {/* <i className="refresh"></i> */}

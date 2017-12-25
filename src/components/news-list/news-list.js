@@ -17,7 +17,8 @@ export default React.createClass({
                         <Link to="/detail" query={{id: 4}}>
                             <h3 className="type0">{item.title}</h3>
                             <div className="list_img_large">
-                                <img src={item.img1}/>
+                                {/* <img src={item.img1}/> */}
+                                <img src={item.img[0]}/>
                             </div>
                             <div className="item_info">
                                 <div>
