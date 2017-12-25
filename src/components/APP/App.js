@@ -183,17 +183,15 @@ export default React.createClass({
         console.log('list列表:' + this.state.list);
         console.log('**********2222***************');
         const listItem = [{
-            title: '亮眼！习近平新时代中国特色社会主义经济思想',
-            labels: '置顶',
-            src: '新华网',
+            title: '赶快戳！30亿红包任意疯抢，只在平安财神节',
+            labels: '广告',
+            src: '中国平安',
             cmt:'评论 252',
             times:'5小时前',
             img: [
-                'https://p3.pstatp.com/list/440800055fac69a73c61',
-                'https://p3.pstatp.com/list/440800065ee7c6879793',
-                'https://p3.pstatp.com/list/440600079a73eb436b39',
+                'http://p9.pstatp.com/large/50ba000aa5f487633425',
             ],
-            type: 1
+            type: 0
         }];
         this.setState({
             // list:[{
