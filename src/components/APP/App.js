@@ -51,7 +51,7 @@ export default React.createClass({
                     img1:'https://p3.pstatp.com/list/440800055fac69a73c61',
                     img2:'https://p3.pstatp.com/list/440800065ee7c6879793',
                     img3:'https://p3.pstatp.com/list/440600079a73eb436b39',
-                    img [
+                    img: [
                         'https://p3.pstatp.com/list/440800055fac69a73c61',
                         'https://p3.pstatp.com/list/440800065ee7c6879793',
                         'https://p3.pstatp.com/list/440600079a73eb436b39',
