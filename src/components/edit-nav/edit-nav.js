@@ -86,32 +86,73 @@ export default React.createClass({
         });
     },
 
+    deleteItem(evt, id) {
+        // .0.0.0.1$9
+        let curId = (id.split('$'))[1] - 0;
+
+        let deletedChannel = this.state.myChannel[curId];
+
+        let sugAfterAdd = [];
+        let myAfterDel = [];
+
+        sugAfterAdd = this.state.sugChannel.map((item) => {
+            return item;
+        });
+        sugAfterAdd.push(deletedChannel);
+
+        this.state.myChannel.forEach((item) => {
+            if (item.text !== deletedChannel.text) {
+               // console.log(item.text);
+                myAfterDel.push(item);
+            }
+        });        
+
+        this.setState({
+            myChannel: myAfterDel,
+            sugChannel: sugAfterAdd
+        });
+    },
+
     render() {
 
         return (
             <section className={classNames('edit-nav', {'show': this.props.status})}>
                 <NewsHeader className="header"></NewsHeader>
-                <div onClick={this.close} className="openBt">x</div>
-                <div>我的频道</div>
-                <ul>
-                    {
-                        this.state.myChannel.map((item, index) => {
-                            return (
-                                <li key={index}>{item.text}</li>
-                            );
-                        })
-                    }
-                </ul>
-                <div>频道推荐</div>
-                <ul>
-                    {
-                        this.state.sugChannel.map((item, index) => {
-                            return (
-                                <li key={index} onClick={this.clickSuggest}>{item.text}</li>
-                            );
-                        })
-                    }
-                </ul>
+                <div>
+                    <div onClick={this.close} className="openBt">x</div>
+                    <div className="controlBlock">
+                        <span className="controlTitle">
+                            我的频道
+                        </span>
+                        <ul>
+                            {
+                                this.state.myChannel.map((item, index) => {
+                                    return (
+                                        <li key={index} className="listItem" onClick={this.deleteItem}>
+                                            <a>{item.text}</a>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span className="controlTitle">频道推荐</span>
+                        <ul>
+                            {
+                                this.state.sugChannel.map((item, index) => {
+                                    return (
+                                        <li key={index} onClick={this.clickSuggest} className="listItem">
+                                            <a>{item.text}</a>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>  
+                    </div>
+
+                </div>
             </section>
         );
     },

@@ -105,7 +105,7 @@ export default React.createClass({
             return (
                 <li key={index} 
                     className={classNames({'cur': index === this.state.selectedItem})}
-                    onClick={this.changeNav}>
+                    onClick={this.changeNav} className="NewNav">
                     <Link to='/detail' query={{id: 1}}>
                         {item.text}
                     </Link>
@@ -114,7 +114,7 @@ export default React.createClass({
         });
         return (
             <section className="news-nav">
-                <ul>
+                <ul className="ListNav">
                     {listElement}
                 </ul>
                 <span className="plus" onClick={this.editNav}>+</span>

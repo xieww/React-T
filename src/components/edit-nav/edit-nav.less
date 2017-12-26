@@ -16,20 +16,42 @@
         left: 19px;
         padding-top: 100px;
     }
-
+    .controlBlock {
+        width: 100%;
+        font-weight: 500;
+        
+        .controlTitle {
+            display: block;
+            padding: 0 10px;
+            line-height: 2em;
+            background-color: #f5f5f5;
+            color: #666;
+        }
+    }
     ul {
         margin: 10px 0;
-        li {
-            display: inline-block;
-            padding: 5px 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            color: #131313;
-            // font-size: 16px;
-            text-align: center;
-            line-height: 40px;
-            margin: 0 8px;
-            width: 20%;
+        list-style-type: none;
+        display: block;
+
+        li.listItem {
+                display: inline-block;
+                width: 25%;
+                margin-bottom: 10px;
+                list-style-type: none;
+                animation: zoomIn .3s ease;
+                padding-top: 20px;
+
+                a {
+                    // background: #f0f0f0;
+                    // font-size: 16px;
+                    display: block;
+                    margin: 0 8px;
+                    border: 1px solid #C0C0C0;
+                    text-align: center;
+                    line-height: 2em;
+                    text-decoration: none;
+                    color: #131313;
+                }
         }
     }
 }
