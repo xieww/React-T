@@ -1,7 +1,7 @@
 {
-    "name": "NewDetails",
+    "name": "hotRecom",
     "version": "1.0.0",
     "private": true,
-    "main": "./NewDetails.js"
+    "main": "./hotRecom.js"
 }
   
