@@ -27,6 +27,16 @@
         -webkit-margin-before-collapse: discard;
         padding: 0 14px 0 14px;
 
+        .hotLI {
+            position: relative;
+            border-bottom: .5px solid #E8E8E8;
+            margin-bottom: 26px;
+            border: none !important;
+            display: block;
+        }
+        .leftImg {
+            width: 100%;
+        }
         .title {
             h3 {
                 font-size: 34px;
@@ -114,6 +124,68 @@
                 font-size: 20px;
                 vertical-align: middle;
                 display: inline-block;
+            }
+        }
+        .left_img {
+            overflow: hidden;
+            width: 32%;
+            display: inline-block;
+            vertical-align: middle;
+            height: 1.96875rem;
+            position: relative;
+            
+            img {
+                border: none;
+                display: block;
+                width: 100%;
+                transition: opacity 200ms ease;
+                opacity: 1;
+            }
+        }
+        .rights {
+            display: inline-block;
+            width: 67%;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            padding-left: 7px;
+
+            .type0 {
+                font-size: 32px;
+                line-height: 33px;
+                color: #222;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                // font-weight: normal;
+                
+            }
+            .infos {
+                
+                margin-top: 4px;
+                color: #999;
+
+                .labels {                
+                    color: #f85959;
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+                .srcSpace {
+                    margin-right: 10px;
+                    line-height: 25px;
+                    font-size: 28px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                .cmtSpace {
+                    margin-right: 10px;
+                    line-height: 24px;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
             }
         }
         .ListItems {

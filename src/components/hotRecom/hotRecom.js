@@ -10,7 +10,7 @@ export default React.createClass({
 
         hotItem = this.props.list.map((item,index) => {
             if (item.type ===1) {
-                return (<li key={index}>
+                return (<li key={index} className="hotLI"> 
                     <Link to="/detail" query={{id: 4}}>
                         <div className="title">
                             <h3>{item.title}</h3>
@@ -37,8 +37,26 @@ export default React.createClass({
                         </div>
                     </Link>
                 </li>);
-            } else {
-                
+            } else if(item.type === 0){
+                return (<li key={index} className="hotLI leftImg"> 
+                    <Link to="/detail" query={{id: 4}}>
+                        <div className="main-wrap">
+                            <div className="left_img">
+                                <img src={item.img[0]} />
+                            </div>
+                            <div className="rights">
+                                <span className="type0">{item.title}</span>
+                                <div className="infos">
+                                    <div>
+                                        <span className="labels">打开APP</span>
+                                        <span className="srcSpace1">{item.src}</span>
+                                        <span className="cmtSpace1">{item.cmt}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </li>);
             }
 
         })

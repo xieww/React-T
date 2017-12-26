@@ -1,0 +1,196 @@
+.guessLike {
+    
+    .guessTitle {
+        display: inline-block;
+        width: 100%;
+        font-size: 33px;
+        line-height: 15px;
+        padding: 14px 0 8px 0;
+        color: #000;
+        font-weight: 600;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: none;
+    }
+    .guessTitle:before {
+        content: '';
+        width: 8px;
+        height: 35px;
+        border-radius: 1px;
+        margin-right: 10px;
+        background-color: #f85959;
+        display: inline-block;
+        vertical-align: sub;
+    }
+    .guessList {
+        -webkit-margin-after-collapse: separate;
+        -webkit-margin-before-collapse: discard;
+        padding: 0 14px 0 14px;
+
+        .hotLI {
+            position: relative;
+            border-bottom: .5px solid #E8E8E8;
+            margin-bottom: 26px;
+            border: none !important;
+            display: block;
+        }
+        .leftImg {
+            width: 100%;
+        }
+        .title {
+            h3 {
+                font-size: 34px;
+                line-height: 42px;
+                color: #222;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                font-weight: normal;
+            }
+            .item_img {
+                margin: 12px 0 0 0;
+                padding: 0;
+                border: 0;
+                
+                ul {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    font-size: 0;
+                    text-align: center;
+                    
+    
+                    li {
+                        float: left;
+                        margin: 0;
+                        padding: 0;
+                        margin-left: 0.2px;
+                    }
+    
+                    .list_image {
+                        display: inline-block;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                        width: 33.3%;
+                        height: 1.96875rem;
+                        position: relative;
+                        list-style-type: none;
+                        left: 0px;
+           
+                        img {
+                            border: none;
+                            display: block;
+                            width: 100%;
+                            -webkit-transition: opacity 300ms ease;
+                            pointer-events: none;
+                            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .item_info {
+            margin-top: 18px;
+            color: #999;
+            overflow: hidden;
+            clear: both;
+            padding-top: 20px;
+    
+            .labels {
+                
+                color: #f85959;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .srcSpace {
+                margin-right: 10px;
+                line-height: 24px;
+                font-size: 20px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .cmtSpace {
+                margin-right: 10px;
+                line-height: 24px;
+                font-size: 20px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .times {
+                line-height: 24px;
+                font-size: 20px;
+                vertical-align: middle;
+                display: inline-block;
+            }
+        }
+        .left_img {
+            overflow: hidden;
+            width: 32%;
+            display: inline-block;
+            vertical-align: middle;
+            height: 1.96875rem;
+            position: relative;
+            
+            img {
+                border: none;
+                display: block;
+                width: 100%;
+                transition: opacity 200ms ease;
+                opacity: 1;
+            }
+        }
+        .rights {
+            display: inline-block;
+            width: 67%;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            padding-left: 7px;
+
+            .type0 {
+                font-size: 32px;
+                line-height: 33px;
+                color: #222;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                // font-weight: normal;
+                
+            }
+            .infos {
+                
+                margin-top: 4px;
+                color: #999;
+
+                .labels {                
+                    color: #f85959;
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+                .srcSpace {
+                    margin-right: 10px;
+                    line-height: 25px;
+                    font-size: 28px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                .cmtSpace {
+                    margin-right: 10px;
+                    line-height: 24px;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+            }
+        }
+        .ListItems {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
