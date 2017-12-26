@@ -28,6 +28,28 @@ export default React.createClass({
                         'https://p3.pstatp.com/large/50a60001532e03e83900',
                     ]
                 }
+            ],
+            HotLists : [
+                {
+                    title: '中纪委两任书记到福建调研有何深意？',
+                    labels: '热',
+                    src: '长安街知事',
+                    cmt:'评论 252',
+                    img: ['https://p3.pstatp.com/list/50a10003ae7fc02672fb'],
+                    type: 0,
+                },
+                {
+                    title: '小孩被拐卖6年，街头乞讨忽然认出妈妈！但妈妈：孩子，你认错了',
+                    labels: '热',
+                    src: '旅行时刻',
+                    cmt:'评论 252',
+                    img:[
+                        'http://p1.pstatp.com/list/4af8000456fd246e5a6f',
+                        'http://p1.pstatp.com/list/4afb00022136524474f9',
+                        'http://p9.pstatp.com/list/4afa0003edb64ba0ae12',
+                    ],
+                    type: 1
+                }
             ]
         };
     },
@@ -111,7 +133,7 @@ export default React.createClass({
                 
                 <div>
                     <div className="bottomItem">
-                        <HotRecom></HotRecom>
+                        <HotRecom list={this.state.HotLists}></HotRecom>
                     </div>
                 </div>   
             </section>
