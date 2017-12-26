@@ -59,6 +59,12 @@ export default React.createClass({
         this.props.afterClose && this.props.afterClose();
     },
 
+    /**
+     * @author xiwww
+     * @desc 添加频道
+     * @param {*} evt 
+     * @param {*} id 
+     */
     clickSuggest(evt, id) {
         // .0.0.0.1$9
         let curId = (id.split('$'))[1] - 0;
@@ -86,6 +92,12 @@ export default React.createClass({
         });
     },
 
+    /**
+     * @authorxieww
+     * @desc 删除频道
+     * @param {*} evt 
+     * @param {*} id 
+     */
     deleteItem(evt, id) {
         // .0.0.0.1$9
         let curId = (id.split('$'))[1] - 0;
