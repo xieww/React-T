@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import NewsHeader from '../news-header';
+import HotRecom from '../hotRecom';
 
 import './NewDetails.less';
+import hotRecom from '../hotRecom';
 
 export default React.createClass({
     getInitialState() {
@@ -103,8 +105,14 @@ export default React.createClass({
         return (
             <section className="News_Details" >
                 <NewsHeader className="header"></NewsHeader>
-                <div>
+                <div className="ListTop">
                     {listContent}
+                </div>
+                
+                <div>
+                    <div className="bottomItem">
+                        <HotRecom></HotRecom>
+                    </div>
                 </div>   
             </section>
         );
