@@ -10,18 +10,46 @@ export default React.createClass({
                 {
                     text: '推荐',
                 }, {
-                    text: '直播',
+                    text: '热点',
                 }, {
-                    text: '搞笑',
+                    text: '社会',
+                },{
+                    text: '娱乐',
+                }, {
+                    text: '科技',
+                }, {
+                    text: '汽车',
+                },{
+                    text: '体育',
+                }, {
+                    text: '财经',
+                }, {
+                    text: '军事',
+                },{
+                    text: '国际',
+                }, {
+                    text: '时尚',
+                }, {
+                    text: '游戏',
                 }
             ],
             sugChannel: [
                 {
-                    text: '小说',
+                    text: '旅游',
                 }, {
                     text: '历史',
                 }, {
-                    text: '军事',
+                    text: '探索',
+                },{
+                    text: '美食',
+                }, {
+                    text: '育儿',
+                }, {
+                    text: '养生',
+                },{
+                    text: '故事',
+                }, {
+                    text: '美文',
                 }
             ]
         };
