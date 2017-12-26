@@ -150,7 +150,6 @@ export default React.createClass({
                             }
                         </ul>  
                     </div>
-
                 </div>
             </section>
         );
