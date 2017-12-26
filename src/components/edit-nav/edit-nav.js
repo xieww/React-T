@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import NewsHeader from '../news-header';
 import './edit-nav.less';
 
 export default React.createClass({
@@ -60,8 +61,9 @@ export default React.createClass({
     render() {
 
         return (
-            <section className={classNames('edit-nav', {'show': this.props.status})}>这里是编辑菜单
-                <div onClick={this.close}>x</div>
+            <section className={classNames('edit-nav', {'show': this.props.status})}>
+                <NewsHeader className="header"></NewsHeader>
+                <div onClick={this.close} className="openBt">x</div>
                 <div>我的频道</div>
                 <ul>
                     {
