@@ -148,7 +148,7 @@ export default React.createClass({
                             }
                         </ul>
                     </div>
-                    <div>
+                    <div className="controlBlock">
                         <span className="controlTitle">频道推荐</span>
                         <ul>
                             {

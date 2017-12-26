@@ -29,9 +29,7 @@ export default React.createClass({
             ]
         };
     },
-    // init() {
-    //     this.state(detailList);
-    // },
+
     componentWillMount: function(){
         this.setState({detailList:this.state.detailList});
         console.log('******'+this.state.detailList.title);
