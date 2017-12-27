@@ -3,9 +3,10 @@ import { Link } from 'react-router';
 import NewsHeader from '../news-header';
 import HotRecom from '../hotRecom';
 import GuessLike from '../guessLike';
+import Adsense from '../adsense';
 
 import './NewDetails.less';
-import hotRecom from '../hotRecom';
+
 
 export default React.createClass({
     getInitialState() {
@@ -37,8 +38,7 @@ export default React.createClass({
                     cmt:'评论 252',
                     img: ['https://p3.pstatp.com/list/50a10003ae7fc02672fb'],
                     type: 0,
-                },
-                {
+                },{
                     title: '小孩被拐卖6年，街头乞讨忽然认出妈妈！但妈妈：孩子，你认错了',
                     src: '旅行时刻',
                     cmt:'评论 252',
@@ -69,7 +69,7 @@ export default React.createClass({
                     src: '最可爱属我',
                     cmt:'评论 252',
                     img:[
-                        'hhttp://p3.pstatp.com/list/4b030002bc683e380e80',
+                        'http://p3.pstatp.com/list/4b030002bc683e380e80',
                         'http://p3.pstatp.com/list/4e6e0003ddc0f90e024b',
                         'http://p3.pstatp.com/list/4e71000254dd6ac53301',
                     ],
@@ -125,6 +125,13 @@ export default React.createClass({
                     cmt:'评论 252',
                     img: ['http://p1.pstatp.com/list/4e780000abc7692057d6'],
                     type: 0,
+                }
+            ],
+            AdList : [
+                {
+                    img: ['http://p1.pstatp.com/origin/38bb001bc3e15590c6ad'],
+                    title: '仅限12月27日，天然黑曜石免费领取，你抢到了吗？',
+                    text: '广告'
                 }
             ]
         };
@@ -210,7 +217,9 @@ export default React.createClass({
                 <div>
                     <div className="bottomItem">
                         <HotRecom list={this.state.HotLists}></HotRecom>
+                        <Adsense list={this.state.AdList} title="广告"></Adsense>
                         <GuessLike list={this.state.GuessList}></GuessLike>
+                        <Adsense list={this.state.AdList} title="广告"></Adsense>
                     </div>
                     <div className="botBut">
                         <div className="mes_info">
