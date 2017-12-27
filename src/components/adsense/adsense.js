@@ -14,11 +14,11 @@ export default React.createClass({
                     <div className="adsen_add">
                         <div className="adsen_large">
                             <div className="a_img">
-                                <img className="images" src="http://p1.pstatp.com/origin/38bb001bc3e15590c6ad"/>
+                                <img className="images" src={item.img[0]}/>
                                 <span className="ad_text">{item.text}</span>
                             </div>
                             <div className="text">
-                                <span className="title">仅限12月27日，天然黑曜石免费领取，你抢到了吗？</span>
+                                <span className="title">{item.title}</span>
                             </div>
                         </div>
                     </div>

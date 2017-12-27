@@ -131,7 +131,8 @@ export default React.createClass({
                 {
                     img: ['http://p1.pstatp.com/origin/38bb001bc3e15590c6ad'],
                     title: '仅限12月27日，天然黑曜石免费领取，你抢到了吗？',
-                    text: '广告'
+                    text: '广告',
+                    type:0,
                 }
             ]
         };
