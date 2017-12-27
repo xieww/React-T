@@ -213,7 +213,7 @@ export default React.createClass({
                         <GuessLike list={this.state.GuessList}></GuessLike>
                     </div>
                     <div className="botBut">
-                        <div className="message">
+                        <div className="mes_info">
                             <span className="title">
                                 今日头条
                             </span>
