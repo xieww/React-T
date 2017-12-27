@@ -211,13 +211,14 @@ export default React.createClass({
                     <div className="bottomItem">
                         <HotRecom list={this.state.HotLists}></HotRecom>
                         <GuessLike list={this.state.GuessList}></GuessLike>
-                        <div className="botBut">
-                            <div className="message">
-                                <span className="title">
-                                    今日头条
-                                </span>
-                                <span className="desc">查看全部精彩评论</span>
-                            </div>
+                    </div>
+                    <div className="botBut">
+                        <div className="message">
+                            <span className="title">
+                                今日头条
+                            </span>
+                            <span className="desc">查看全部精彩评论</span>
+                            <a className="open">打开</a>
                         </div>
                     </div>
                 </div>   
