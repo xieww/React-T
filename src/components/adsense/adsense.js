@@ -7,5 +7,12 @@ export default React.createClass({
 
     render() {
         
-    }
+        return (
+            <selection className="adsense">
+                <div className="adsense_1">
+                    
+                </div>
+            </selection>
+        );
+    },
 })
