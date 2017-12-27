@@ -421,6 +421,9 @@ export default React.createClass({
                 <NewsNav className="nav" list={navList}></NewsNav>
                 {/* <NewsList list={list.sug}></NewsList> */}
                 <NewsList list={this.state.list} listCount={this.state.list.length}></NewsList>
+                <div className="RedBox">
+                    <img className="redImg" src="https://s3a.pstatp.com/growth/mobile_list/image/bonus_icon@3x_f4035aa1.png" />
+                </div>
                 <BottomBar></BottomBar>
             </section>
         );
