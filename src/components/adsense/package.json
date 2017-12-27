@@ -1,0 +1,6 @@
+{
+  "name": "adsense",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./adsense.js"
+}
