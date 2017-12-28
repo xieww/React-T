@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import KeyValue from '../KeyValue';
 import './news-list.less';
 import { LoadMore } from 'react-weui';
+import 'weui/src/style/weui.less';
 import 'react-weui/build/packages/react-weui.css';
 
 
@@ -116,13 +117,12 @@ export default React.createClass({
         // this.state
         return (
             <section className="news-list">
-                <ul>
-                    {newsList}
-                </ul>
                 <div className="news-loadmore">
                     <LoadMore loading="true">Loading</LoadMore>
                 </div>
-
+                <ul>
+                    {newsList}
+                </ul>
             </section>
         );
     },
