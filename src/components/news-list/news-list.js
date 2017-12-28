@@ -119,6 +119,9 @@ export default React.createClass({
                 <ul>
                     {newsList}
                 </ul>
+                <div className="news-loadmore">
+                    <LoadMore loading="true">Loading</LoadMore>
+                </div>
                 {/* <div className="RedBox">
                     <img className="redImg" src="https://s3a.pstatp.com/growth/mobile_list/image/bonus_icon@3x_f4035aa1.png" />
                 </div> */}
