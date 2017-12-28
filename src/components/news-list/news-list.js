@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-
 import KeyValue from '../KeyValue';
-
 import './news-list.less';
+
+
 
 export default React.createClass({
 
