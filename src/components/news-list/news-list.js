@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import KeyValue from '../KeyValue';
 import './news-list.less';
-
+import { LoadMore } from 'react-weui';
+import 'react-weui/build/packages/react-weui.css';
 
 
 export default React.createClass({
