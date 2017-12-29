@@ -117,9 +117,9 @@ export default React.createClass({
         // this.state
         return (
             <section className="news-list">
-                <div className="news-loadmore">
+                {/* <div className="news-loadmore">
                     <LoadMore loading="true">Loading</LoadMore>
-                </div>
+                </div> */}
                 <ul>
                     {newsList}
                 </ul>
