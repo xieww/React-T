@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "React JS application skeleton using Webpack and other awesome tools",
   "private": true,
-  "homepage" : "./",
   "engines": {
     "node": ">=4.1 <5",
     "npm": ">=2.14.7 <3"
