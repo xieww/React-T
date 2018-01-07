@@ -8,10 +8,30 @@ const urlMap = {
 };
 
 const ApiService = {
+    /**
+     * 获取首页新闻信息
+     * @author xieww
+     * @param {*} requestConfig 
+     * @param {*} callback 
+     */
     getNews(requestConfig, callback) {
         const url = urlMap.getNews;
         return http.get(url, requestConfig.params).then(response => {
             console.log(response);
+            return callback(response);
+        });
+    },
+
+    /**
+     * 获取新闻详情
+     * @author
+     * @param {*} requestConfig 
+     * @param {*} callback 
+     */
+    getNewsDetail(requestConfig, callback) {
+        const url = urlMap.getNewsDetail.replace(/{{groupId}}/ig, requestConfig.params.groupId);
+
+        return http.get(url, requestConfig.params).then(response => {
             return callback(response);
         });
     },
