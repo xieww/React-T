@@ -44,15 +44,12 @@ export default React.createClass({
                             <div className="item_img">
                                 <ul>
                                     <li className="list_image">
-                                        {/* <img src={item.img1}/> */}
                                         <img src={item.img[0]}/>
                                     </li>
                                     <li className="list_image">
-                                        {/* <img src={item.img2}/> */}
                                         <img src={item.img[1]}/>
                                     </li>
                                     <li className="list_image">
-                                        {/* <img src={item.img3}/> */}
                                         <img src={item.img[2]}/>
                                     </li>
                                 </ul>
@@ -88,6 +85,11 @@ export default React.createClass({
                 </li>);
             }
 
+            let imgs = '';
+
+            if(item.image_list && item.image_list.length > 0){
+                imgs = (<img src={item.image_list[0].url}/>);
+            }
             return (<li key={index}>
                 <Link to="/detail" query={{id: 4}}>
                     <div className="main-wrap">
@@ -95,15 +97,15 @@ export default React.createClass({
                             <h3 className="type0">{item.title}</h3>
                             <div className="item_info">
                                 <div>
-                                    <span className="labels">{item.labels}</span>
-                                    <span className="srcSpace">{item.src}</span>
-                                    <span className="cmtSpace">{item.cmt}</span>
-                                    <span className="times">{item.times}</span>
+                                    <span className="labels">{item.label}</span>
+                                    <span className="srcSpace">{item.media_name}</span>
+                                    <span className="cmtSpace">{item.comment_count}</span>
+                                    <span className="times">{item.datetime}</span>
                                 </div>
                             </div>
                         </div>
                         <div className="right_img">
-                            <img src={item.img1} />
+                            {imgs}
                             {/* <img src={item.img[0]} /> */}
                         </div>
                     </div>
