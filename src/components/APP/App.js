@@ -16,7 +16,8 @@ export default React.createClass({
      */
     getInitialState() {
         return {
-            list: []
+            list: [],
+            loading: true
             // list: [
             //     {
             //         title: '晚上如果不用抖音看妹子，根本睡不着',
@@ -223,6 +224,7 @@ export default React.createClass({
             console.log('**************************');
             console.log('data:',data);
             this.setState({
+                loading: false,
                 list:data.data,
             });
         });
@@ -426,7 +428,7 @@ export default React.createClass({
                 <NewsHeader className="header"></NewsHeader>
                 <NewsNav className="nav" list={navList}></NewsNav>
                 {/* <NewsList list={list.sug}></NewsList> */}
-                <NewsList list={this.state.list} listCount={this.state.list.length}></NewsList>
+                <NewsList list={this.state.list} loading={this.state.loading} listCount={this.state.list.length}></NewsList>
                 <div className="RedBox">
                     <img className="redImg" src="https://s3a.pstatp.com/growth/mobile_list/image/bonus_icon@3x_f4035aa1.png" />
                 </div>

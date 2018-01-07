@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import KeyValue from '../KeyValue';
 import './news-list.less';
+import classNames from 'classnames';
 import { LoadMore } from 'react-weui';
 import 'weui/src/style/weui.less';
 import 'react-weui/build/packages/react-weui.css';
@@ -10,7 +11,8 @@ import 'react-weui/build/packages/react-weui.css';
 export default React.createClass({
 
     render() {
-
+     
+        console.log('this.props:' + this.props.loading);
 
         let newsList = '';
         
@@ -19,7 +21,7 @@ export default React.createClass({
             if (item.type === 0) {
                 return (
                     <li key={index}> 
-                        <Link to="/detail" query={{id: 4}}>
+                        <Link to="/detail" query={{id: item.group_id}}>
                             <h3 className="type0">{item.title}</h3>
                             <div className="list_img_large">
                                 <img src={item.img[0]}/>
@@ -37,7 +39,7 @@ export default React.createClass({
                 );
             } else if(item.image_list && typeof item.image_list !== 'string' && item.image_list.length >= 3){
                 return (<li key={index}>
-                    <Link to="/detail" query={{id: 4}}>
+                    <Link to="/detail" query={{id: item.group_id}}>
                         <div className="title">
                             <h3>{item.title}</h3>
                             <div className="item_img">
@@ -71,7 +73,7 @@ export default React.createClass({
             } else if(item.image_list.length === 0  && typeof item.large_image_url === 'string'){
                 console.log('**************',item.large_image_url);
                 return (<li key={index}>
-                    <Link to="/detail" query={{id: 4}}>
+                    <Link to="/detail" query={{id: item.group_id}}>
                         <div className="main-wrap">
                             <div className="main_l">
                                 <h3 className="type0">{item.title}</h3>
@@ -92,7 +94,7 @@ export default React.createClass({
                 </li>);
             } else {
                 return (<li key={index}>
-                    <Link to="/detail" query={{id: 4}}>
+                    <Link to="/detail" query={{id: item.group_id}}>
                         <h3 className="type0">{item.title}</h3>
                         <div className="item_info">
                             <div>
@@ -138,11 +140,12 @@ export default React.createClass({
 
         // this.props
         // this.state
+        
         return (
             <section className="news-list">
-                {/* <div className="news-loadmore">
+                <div className={classNames('news-loadmore',{'show': this.props.loading})} >
                     <LoadMore loading="true">Loading</LoadMore>
-                </div> */}
+                </div>
                 <ul>
                     {newsList}
                 </ul>

@@ -7,6 +7,8 @@ import App from './components/APP';
 import NewsDetail from './components/news-detail';
 import NewDetails from './components/NewDetails';
 
+import './public/css/loadmore.less';
+
 window.React = React;
 
 const redirectToChild = (location, replaceState) => {
