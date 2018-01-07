@@ -22,7 +22,6 @@ export default React.createClass({
                         <Link to="/detail" query={{id: 4}}>
                             <h3 className="type0">{item.title}</h3>
                             <div className="list_img_large">
-                                {/* <img src={item.img1}/> */}
                                 <img src={item.img[0]}/>
                             </div>
                             <div className="item_info">
@@ -69,18 +68,40 @@ export default React.createClass({
                         </div> */}
                     </Link>
                 </li>);
-            } else if(item.type === 2) {
+            } else if(item.image_list.length === 0  && typeof item.large_image_url === 'string'){
+                console.log('**************',item.large_image_url);
+                return (<li key={index}>
+                    <Link to="/detail" query={{id: 4}}>
+                        <div className="main-wrap">
+                            <div className="main_l">
+                                <h3 className="type0">{item.title}</h3>
+                                <div className="item_info">
+                                    <div>
+                                        <span className="labels">{item.label}</span>
+                                        <span className="srcSpace">{item.media_name}</span>
+                                        <span className="cmtSpace">{item.comment_count}</span>
+                                        <span className="times">{item.datetime}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="right_img">
+                                <img src={item.large_image_url} />
+                            </div>
+                        </div>
+                    </Link>
+                </li>);
+            } else {
                 return (<li key={index}>
                     <Link to="/detail" query={{id: 4}}>
                         <h3 className="type0">{item.title}</h3>
                         <div className="item_info">
-                                <div>
-                                    <span className="labels">{item.labels}</span>
-                                    <span className="srcSpace">{item.src}</span>
-                                    <span className="cmtSpace">{item.cmt}</span>
-                                    <span className="times">{item.times}</span>
-                                </div>
+                            <div>
+                                <span className="labels">{item.label}</span>
+                                <span className="srcSpace">{item.media_name}</span>
+                                <span className="cmtSpace">{item.comment_count}</span>
+                                <span className="times">{item.datetime}</span>
                             </div>
+                        </div>
                     </Link>
                 </li>);
             }
