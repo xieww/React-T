@@ -4,7 +4,13 @@ import NewsHeader from '../news-header';
 import HotRecom from '../hotRecom';
 import GuessLike from '../guessLike';
 import Adsense from '../adsense';
+import ApiService from '../../api/ApiService';
 
+import classNames from 'classnames';
+import { LoadMore } from 'react-weui';
+
+import 'weui/src/style/weui.less';
+import 'react-weui/build/packages/react-weui.css';
 import './NewDetails.less';
 
 
@@ -134,14 +140,34 @@ export default React.createClass({
                     text: '广告',
                     type:0,
                 }
-            ]
+            ],
+            content: '',
+            loading: true
         };
     },
 
-    componentWillMount: function(){
-        this.setState({detailList:this.state.detailList});
-        console.log('******'+this.state.detailList.title);
+    componentWillMount() {
+        // this.setState({detailList:this.state.detailList});
+        console.log('++++++++新闻详情++++++++');
+        setTimeout(() => {       
+            ApiService.getNewsDetail({
+                params: {
+                    groupId: this.props.location.query.id
+                }
+            }, (detail) => {
+                console.log('========新闻详情信息========',detail.data);
+                this.setState({
+                    content: detail.data.content,
+                    loading: false
+                });
+            });
+        }, 2000);
     },
+
+    ComponentShouldUpdate(preState, peProps) {
+        return true;
+    },
+
     render() {
 
         let listContent = '';
@@ -210,6 +236,9 @@ export default React.createClass({
 
         return (
             <section className="News_Details" >
+                <div className={classNames('news-loadmore',{'show': this.state.loading})} >
+                    <LoadMore loading="true">Loading</LoadMore>
+                </div>
                 <NewsHeader className="header"></NewsHeader>
                 <div className="ListTop">
                     {listContent}
