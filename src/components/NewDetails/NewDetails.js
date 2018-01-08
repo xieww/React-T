@@ -37,6 +37,7 @@ export default React.createClass({
                     ]
                 }
             ],
+            // detailList : '',
             HotLists : [
                 {
                     title: '董卿哭着说出丈夫的身份，来头如此之大，难怪董卿一直不敢公开',
@@ -158,6 +159,7 @@ export default React.createClass({
                 console.log('========新闻详情信息========',detail.data);
                 this.setState({
                     content: detail.data.content,
+                    // detailList : detail.data,
                     loading: false
                 });
             });
@@ -171,7 +173,7 @@ export default React.createClass({
     render() {
 
         let listContent = '';
-
+        console.log('++++++++++++++++',this.state.detailList);
         listContent = this.state.detailList.map((item, index) => {
             return (
                 <div className="news_content">
@@ -225,6 +227,7 @@ export default React.createClass({
                                 </span>
                             </p>
                         </div>
+
                     </div>
                     <div className="downloadApp">
                         <div className="lows"></div>
@@ -242,6 +245,7 @@ export default React.createClass({
                 <NewsHeader className="header"></NewsHeader>
                 <div className="ListTop">
                     {listContent}
+                    {/* <div dangerouslySetInnerHTML={{__html: this.state.content}}></div> */}
                 </div>
                 
                 <div>
