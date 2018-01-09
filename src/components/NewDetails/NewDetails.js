@@ -165,6 +165,11 @@ export default React.createClass({
                     detailList : detail.data,
                     loading: false
                 });
+            }, (err) => {
+                this.setState({
+                    loading: false,
+                    list: newsDetails[0],
+                });
             });
         }, 2000);
     },
@@ -282,7 +287,7 @@ export default React.createClass({
                                     </span>
                                     <span className="dot"></span>
                                     <span className="comment">
-                                        {this.state.detailList.comment_count}
+                                        {this.state.detailList.comment_count}评论
                                     </span>
                                 </div>
                             </span>
