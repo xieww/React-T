@@ -211,7 +211,11 @@ export default React.createClass({
     },
 
     getNewsList() {
-        ApiService.getNews({params:{}}, (data) => {
+        ApiService.getNews({
+            params:{
+                
+            }
+        }, (data) => {
             console.log('*************点击*************');
             console.log('data:',data);
             this.setState({
@@ -224,21 +228,17 @@ export default React.createClass({
     
     },
 
-    componentWillReceiveProps(nextProps) {
-
-    },
-
-    componentWillMount() {
-        console.log('初始分类ID',this.props);
+    getData(ids) {
         let tagID = '';
-        // if(!this.props.location.query.id) {
-        //     tagID = '__all__';
-        // }else {
-        //     // tagID = this.props.location.query.id;
-        //     let temp = window.location.hash;
-        //     let index = temp.search("&");
-        //     tagID = temp.substring(5,index);
-        // };
+        if(!this.props.location.query.id) {
+            tagID = '__all__';
+        }else {
+            // tagID = this.props.location.query.id;
+            // let temp = window.location.hash;
+            // let index = temp.search("&");
+            // tagID = temp.substring(5,index);
+            tagID = ids;
+        };
         ApiService.getNews({
             params:{
                 tagId :tagID,
@@ -259,8 +259,18 @@ export default React.createClass({
                 });
             });
     },
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.location.query.id != this.props.location.query.id) {
+            this.getData(nextProps.location.query.id);
+        } 
+    },
+
+    componentWillMount() {
+        console.log('初始分类ID',this.props);
+        let tagID = '';
+        this.getData(tagID);
+    },
     shouldComponentUpdate() {
-        console.log('分类ID' + this.props.location.query.id);
         return true;
     },
     /**
