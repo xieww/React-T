@@ -297,8 +297,7 @@ export default React.createClass({
                         <a className="download_open">打开APP阅读全文</a>
                     </div>
                 </div>
-                </div>
-                
+                </div>    
                 <div>
                     <div className="bottomItem">
                         <HotRecom list={this.state.HotLists}></HotRecom>
