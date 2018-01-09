@@ -5,6 +5,7 @@ import HotRecom from '../hotRecom';
 import GuessLike from '../guessLike';
 import Adsense from '../adsense';
 import ApiService from '../../api/ApiService';
+import { newsDetails } from  '../../dataStore/data';
 
 import classNames from 'classnames';
 import { LoadMore } from 'react-weui';
@@ -149,8 +150,9 @@ export default React.createClass({
 
     componentWillMount() {
         // this.setState({detailList:this.state.detailList});
-        console.log('++++++++新闻详情++++++++');
-        console.log('this.props:',this.props);
+        // console.log('++++++++新闻详情++++++++');
+        // console.log('this.props:',this.props);
+        console.log('newsDetails=',newsDetails[0]);
         setTimeout(() => {       
             ApiService.getNewsDetail({
                 params: {
