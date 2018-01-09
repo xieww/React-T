@@ -43,6 +43,22 @@ const ApiService = {
         });
     },
 
+    /**
+     * 获取新闻
+     * @author
+     * @param {*} requestConfig 
+     * @param {*} callback 
+     */
+    getLikeNews(requestConfig, callback, failCallback) {
+        const url = urlMap.getLikeNews;
+
+        return http.get(url, requestConfig.params).then(response => {
+            return callback(response);
+        },err => {
+            return failCallback && failCallback();
+        });
+    },
+
 };
 
 export default ApiService;

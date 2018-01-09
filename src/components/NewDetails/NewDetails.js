@@ -5,7 +5,7 @@ import HotRecom from '../hotRecom';
 import GuessLike from '../guessLike';
 import Adsense from '../adsense';
 import ApiService from '../../api/ApiService';
-import { newsDetails } from  '../../dataStore/data';
+import { newsDetails ,topicList } from  '../../dataStore/data';
 
 import classNames from 'classnames';
 import { LoadMore } from 'react-weui';
@@ -144,18 +144,16 @@ export default React.createClass({
                 }
             ],
             content: '',
-            loading: true
+            loading: true,
+            topicList: '',
+
         };
     },
 
-    componentWillMount() {
-        // this.setState({detailList:this.state.detailList});
-        // console.log('++++++++新闻详情++++++++');
-        // console.log('this.props:',this.props);
-        
+    getinitData() {
         let index = parseInt(Math.random() * (newsDetails.length - 1));
         let tempList = newsDetails[index];
-        console.log('newsDetails=',tempList);
+        // console.log('newsDetails=',tempList);
         setTimeout(() => {       
             ApiService.getNewsDetail({
                 params: {
@@ -176,6 +174,32 @@ export default React.createClass({
                 });
             });
         }, 2000);
+    },
+
+    getListData() {
+        ApiService.getLikeNews({
+            params: {}
+        }, (data) => {
+            console.log('========热门推荐信息========',data.data);
+            console.log('======热======',data.data["14798012085000246"],data.data["14799599715000246"],data.data["14818696195000246"]);
+            this.setState({
+                topicList : data.data,
+                // loading: false
+            });
+        }, (err) => {
+            this.setState({
+                // loading: false,
+                topicList: topicList,
+            });
+        });
+    },
+    componentWillMount() {
+        // this.setState({detailList:this.state.detailList});
+        // console.log('++++++++新闻详情++++++++');
+        // console.log('this.props:',this.props);
+        
+        this.getinitData();
+        this.getListData();
     },
 
     ComponentShouldUpdate(preState, peProps) {
@@ -260,13 +284,6 @@ export default React.createClass({
         //     );
         // });
 
-        let imgs = '';
-        // if (!this.state.detailList.media_user.avatar_url) {
-        //     imgs = <img className="images" src="https://p3.pstatp.com/thumb/2c66001ab3ed00cd7fc6"/>;
-        // } else {
-        //     imgs = <img className="images" src={this.state.detailList.media_user.avatar_url}/>;
-        // };
-
         return (
             <section className="News_Details" >
                 <div className={classNames('news-loadmore',{'show': this.state.loading})} >
@@ -283,7 +300,6 @@ export default React.createClass({
                         <div className="author_info">
                             <span className="avater">
                                 {/* <img className="images" src={this.state.detailList.media_user.avatar_url}/> */}
-                                {/* {imgs} */}
                             </span>
                             <span className="names">
                                 <div>
