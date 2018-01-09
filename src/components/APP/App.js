@@ -220,23 +220,12 @@ export default React.createClass({
         });
     },
 
-    
     componentWillUpdate(nextProps, nextState) {
     
     },
 
     componentWillReceiveProps(nextProps) {
-        // console.log("componentWillReceiveProps");
-        // if(!this.props.location.query.id) {
-        //     console.log('初始分类ID',this.props);
-        //     tagID = '__all__';
-        // }else {
-        //     console.log('默认ID',this.props);
-        //     // tagID = this.props.location.query.id;
-        //     let temp = window.location.hash;
-        //     let index = temp.search("&");
-        //     tagID = temp.substring(5,index);
-        // }
+
     },
 
     componentWillMount() {
