@@ -213,7 +213,7 @@ export default React.createClass({
     getNewsList() {
         ApiService.getNews({
             params:{
-                
+                tagId:this.props.location.query.id
             }
         }, (data) => {
             console.log('*************点击*************');
