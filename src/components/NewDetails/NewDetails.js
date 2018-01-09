@@ -152,7 +152,10 @@ export default React.createClass({
         // this.setState({detailList:this.state.detailList});
         // console.log('++++++++新闻详情++++++++');
         // console.log('this.props:',this.props);
-        console.log('newsDetails=',newsDetails[0]);
+        
+        let index = parseInt(Math.random() * (newsDetails.length - 1));
+        let tempList = newsDetails[index];
+        console.log('newsDetails=',tempList);
         setTimeout(() => {       
             ApiService.getNewsDetail({
                 params: {
@@ -160,6 +163,7 @@ export default React.createClass({
                 }
             }, (detail) => {
                 console.log('========新闻详情信息========',detail.data);
+                console.log();
                 this.setState({
                     content: detail.data.content,
                     detailList : detail.data,
@@ -168,7 +172,7 @@ export default React.createClass({
             }, (err) => {
                 this.setState({
                     loading: false,
-                    list: newsDetails[0],
+                    detailList: tempList,
                 });
             });
         }, 2000);
@@ -256,6 +260,13 @@ export default React.createClass({
         //     );
         // });
 
+        let imgs = '';
+        // if (!this.state.detailList.media_user.avatar_url) {
+        //     imgs = <img className="images" src="https://p3.pstatp.com/thumb/2c66001ab3ed00cd7fc6"/>;
+        // } else {
+        //     imgs = <img className="images" src={this.state.detailList.media_user.avatar_url}/>;
+        // };
+
         return (
             <section className="News_Details" >
                 <div className={classNames('news-loadmore',{'show': this.state.loading})} >
@@ -271,7 +282,8 @@ export default React.createClass({
                         </h1>
                         <div className="author_info">
                             <span className="avater">
-                                <img className="images" src={this.state.detailList.media_user.avatar_url}/>
+                                {/* <img className="images" src={this.state.detailList.media_user.avatar_url}/> */}
+                                {/* {imgs} */}
                             </span>
                             <span className="names">
                                 <div>
