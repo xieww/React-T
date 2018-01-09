@@ -3,7 +3,8 @@ import util from '../core/Util';
 import { apiBaseUrl, isMobileClient } from './ApiConfig';
 
 const urlMap = {
-    getNews: 'https://m.toutiao.com/list/?tag=__all__&ac=wap&count=20&format=json_raw&as=A1958AA43CAE16A&cp=5A4C6EF1B6EA1E1&min_behot_time=1514987245',
+    getNews: 'https://m.toutiao.com/list/?tag={{tagId}}&ac=wap&count=20&format=json_raw&as=A1958AA43CAE16A&cp=5A4C6EF1B6EA1E1&min_behot_time=1514987245',
+    // getNews: 'https://m.toutiao.com/list/?tag=__all__&ac=wap&count=20&format=json_raw&as=A1958AA43CAE16A&cp=5A4C6EF1B6EA1E1&min_behot_time=1514987245',
     getNewsDetail: 'https://m.toutiao.com/i{{groupId}}/info/?_signature=P4l3zhAVZczD8J2yQcB56z-Jd9&i={{groupId}}'
 };
 
@@ -14,11 +15,14 @@ const ApiService = {
      * @param {*} requestConfig 
      * @param {*} callback 
      */
-    getNews(requestConfig, callback) {
-        const url = urlMap.getNews;
+    getNews(requestConfig, callback, failCallback) {
+        // const url = urlMap.getNews;
+        const url = urlMap.getNews.replace(/{{tagId}}/ig, requestConfig.params.tagId);
+        console.log('打印url信息' + url);
         return http.get(url, requestConfig.params).then(response => {
-            console.log(response);
             return callback(response);
+        },err => {
+            return failCallback && failCallback();
         });
     },
 
@@ -28,11 +32,13 @@ const ApiService = {
      * @param {*} requestConfig 
      * @param {*} callback 
      */
-    getNewsDetail(requestConfig, callback) {
+    getNewsDetail(requestConfig, callback, failCallback) {
         const url = urlMap.getNewsDetail.replace(/{{groupId}}/ig, requestConfig.params.groupId);
 
         return http.get(url, requestConfig.params).then(response => {
             return callback(response);
+        },err => {
+            return failCallback && failCallback();
         });
     },
 

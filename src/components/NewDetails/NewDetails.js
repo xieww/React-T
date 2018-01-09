@@ -150,6 +150,7 @@ export default React.createClass({
     componentWillMount() {
         // this.setState({detailList:this.state.detailList});
         console.log('++++++++新闻详情++++++++');
+        console.log('this.props:',this.props);
         setTimeout(() => {       
             ApiService.getNewsDetail({
                 params: {

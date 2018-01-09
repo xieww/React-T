@@ -105,8 +105,8 @@ export default React.createClass({
             return (
                 <li key={index} 
                     className={classNames({'cur': index === this.state.selectedItem})}
-                    onClick={this.changeNav} className="NewNav">
-                    <Link to='/detail' query={{id: 1}}>
+                    onClick={this.changeNav}>
+                    <Link to='/' query={{id: item.tag}}>
                         {item.text}
                     </Link>
                 </li>
