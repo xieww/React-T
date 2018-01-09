@@ -236,6 +236,11 @@ export default React.createClass({
     
     },
 
+    /**
+     * @author xieww
+     * @param {*} ids 
+     * @description 获取新闻列表信息方法
+     */
     getData(ids) {
         let tagID = '';
         if(!this.props.location.query.id) {
