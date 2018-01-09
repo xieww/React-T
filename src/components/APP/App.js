@@ -210,6 +210,9 @@ export default React.createClass({
         });
     },
 
+    /**
+     * 点击获取新闻列表
+     */
     getNewsList() {
         ApiService.getNews({
             params:{
@@ -220,6 +223,11 @@ export default React.createClass({
             console.log('data:',data);
             this.setState({
                 list:this.state.list.concat(data.data),
+            });
+        }, (err) => {
+            this.setState({
+                loading: false,
+                list: newsList,
             });
         });
     },
