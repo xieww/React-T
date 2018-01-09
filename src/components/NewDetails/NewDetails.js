@@ -259,7 +259,6 @@ export default React.createClass({
                 <NewsHeader className="header"></NewsHeader>
                 <div className="ListTop">
                     {/* {listContent} */}
-                    {/* <div dangerouslySetInnerHTML={{__html: this.state.content}}></div> */}
                     <div className="news_content">
                     <div className="Details_1">
                         <h1 className="titles">
@@ -267,17 +266,13 @@ export default React.createClass({
                         </h1>
                         <div className="author_info">
                             <span className="avater">
-                                {/* <img className="images" src={item.avaterImg}/> */}
                                 <img className="images" src={this.state.detailList.media_user.avatar_url}/>
-                                {/* <span className="mask"></span> */}
                             </span>
                             <span className="names">
                                 <div>
                                     <span className="srcName">
-                                        {/* {item.srcName} */}
                                         {this.state.detailList.source}
                                     </span>
-                                    {/* <img src={item.toutiaoImg}/> */}
                                     <img src="https://s3b.pstatp.com/growth/mobile_detail/image/toutiaohao_tag.1vygyFaw.svg"/>
                                 </div>
                                 <div>
@@ -287,7 +282,6 @@ export default React.createClass({
                                     </span>
                                     <span className="dot"></span>
                                     <span className="comment">
-                                        {/* {item.comment} */}
                                         {this.state.detailList.comment_count}
                                     </span>
                                 </div>
@@ -296,32 +290,6 @@ export default React.createClass({
                         </div>
                     </div>
                     <div className="Details_2">
-                        {/* <div>
-                            <p className="text_1">
-                                {item.textCon[0]}
-                            </p>
-                            <p className="text_1 bgimg">
-                                <span>
-                                    <img className="conImg" src={item.conImg[0]}/>
-                                </span>
-                            </p>
-                            <p className="text_1 bgimg">
-                                <span>
-                                    <img className="conImg" src={item.conImg[1]}/>
-                                </span>
-                            </p>
-                            <p className="text_1">
-                                {item.textCon[1]}
-                            </p>
-                            <p className="text_1">
-                                {item.textCon[2]}
-                            </p>
-                            <p className="text_1 bgimg">
-                                <span>
-                                    <img className="conImg" src={item.conImg[2]}/>
-                                </span>
-                            </p>
-                        </div> */}
                         <div dangerouslySetInnerHTML={{__html: this.state.content}}></div>
                     </div>
                     <div className="downloadApp">
