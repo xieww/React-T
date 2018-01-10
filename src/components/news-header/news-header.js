@@ -39,7 +39,7 @@ export default React.createClass({
             
                 </span> */}
                 <div className="icon_sea">
-                    <Link to="/search" query={{}}></Link>
+                    <Link to="/search" query={{}} className="links">.</Link>
                 </div>
                 {mails}
             </section>

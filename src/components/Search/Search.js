@@ -20,11 +20,10 @@ export default React.createClass({
     },
     render() {
         let listItem = '';
-        console.log('this.state.hotList',this.state.hotList);
         listItem = this.state.hotList.map((item, index) => {
             return (
-                    <li>
-                        <a class="hot_words_link" href="">
+                    <li key={index}>
+                        <a className="hot_words_link" href="">
                             {item.text}
                         </a>
                     </li>
