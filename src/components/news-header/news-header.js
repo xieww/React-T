@@ -29,7 +29,6 @@ export default React.createClass({
             <section className="news-header">
                 <span className="icon_mes" onClick={this.openWindow}>
                     <div className="circle" />
-                    {/* <a className="mails"></a> */}
                 </span>
                 {/* <span className="title">{this.props.title}</span> */}
                 <div className="t_cen">
@@ -40,7 +39,7 @@ export default React.createClass({
             
                 </span> */}
                 <div className="icon_sea">
-                <Link to="/search" query={{}}/>
+                    <Link to="/search" query={{}}></Link>
                 </div>
                 {mails}
             </section>
