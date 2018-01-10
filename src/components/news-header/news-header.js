@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router';
 import "./news-header.less";
 
 export default React.createClass({
@@ -35,7 +36,12 @@ export default React.createClass({
                     <span className="title" />
                     {/* <i className="refresh"></i> */}
                 </div>
-                <span className="icon_sea" />
+                {/* <span className="icon_sea">
+            
+                </span> */}
+                <div className="icon_sea">
+                <Link to="/search" query={{}}/>
+                </div>
                 {mails}
             </section>
         );

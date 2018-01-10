@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 import App from './components/APP';
 import NewsDetail from './components/news-detail';
 import NewDetails from './components/NewDetails';
+import Searchs from './components/Search';
 
 import './public/css/loadmore.less';
 
@@ -32,7 +33,8 @@ function bootstrap() {
     render(
         (<Router>
             <Route path="/" component={App}></Route>
-            <Route path="/detail" component={NewDetails} />            
+            <Route path="/detail" component={NewDetails} />   
+            <Route path="/search" component={Searchs} />          
           </Router>), document.getElementById('react_container')
         );
 }

@@ -323,7 +323,8 @@ export default React.createClass({
         const navList = tags;
         // JSX
         return (
-            <section className="news" onClick={this.getNewsList}>
+            //onClick={this.getNewsList}
+            <section className="news" >
                 <NewsHeader className="header"></NewsHeader>
                 <NewsNav className="nav" list={navList}></NewsNav>
                 {/* <NewsList list={list.sug}></NewsList> */}
