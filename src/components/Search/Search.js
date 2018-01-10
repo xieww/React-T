@@ -1,8 +1,32 @@
 import React from "react";
 import "./Search.less";
+import { hotList } from  '../../dataStore/data';
 
 export default React.createClass({
+
+    getInitialState() {
+        return {
+            hotList: '',
+        }
+    },
+
+    componentWillMount() {
+        this.setState({
+            hotList: hotList,
+        });
+    },
     render() {
+        let listItem = '';
+        console.log('this.state.hotList',this.state.hotList);
+        listItem = this.state.hotList.map((item, index) => {
+            return (
+                    <li>
+                        <a class="hot_words_link" href="">
+                            {item.text}
+                        </a>
+                    </li>
+            ); 
+        });
         return (
             <section className="searchpanel">
                 <header id="header" className="headerTops">
@@ -29,16 +53,7 @@ export default React.createClass({
                 <div className="hot_list">
                     <div className="hot_words">
                         <ul className="toutiao">
-                            <li>
-                                <a class="hot_words_link" href="">
-                                    黎明肖像被盗用
-                                </a>
-                            </li>
-                            <li>
-                                <a class="hot_words_link" href="">
-                                    女护士遇害案告破
-                                </a>
-                            </li>
+                            {listItem}
                         </ul>
                     </div>
                 </div>
