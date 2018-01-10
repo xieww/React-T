@@ -4,6 +4,9 @@ import { hotList } from  '../../dataStore/data';
 
 export default React.createClass({
 
+    /**
+     * 设置初始state
+     */
     getInitialState() {
         return {
             hotList: '',
