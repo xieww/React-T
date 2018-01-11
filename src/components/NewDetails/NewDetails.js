@@ -182,14 +182,13 @@ export default React.createClass({
         ApiService.getLikeNews({
             params: {}
         }, (data) => {
-            console.log('========热门推荐信息========',data.data);
-            console.log('======热======',data.data["14798012085000246"],data.data["14799599715000246"],data.data["14818696195000246"]);
             this.setState({
-                topicList : data.data,
+                // topicList : data.data,
+                GuessList:data.data["14799599715000246"],
+                HotLists: data.data["14798012085000246"],
                 // loading: false
             });
         }, (err) => {
-            console.log(topicList["14799599715000246"],topicList["14798012085000246"]);
             this.setState({
                 // loading: false,
                 // topicList: topicList,
