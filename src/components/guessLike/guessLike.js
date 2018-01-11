@@ -11,7 +11,7 @@ export default React.createClass({
         guessItem = this.props.list.map((item,index) => {
             if (item.feed_type ===7) {
                 return (<li key={index} className="hotLI"> 
-                    <Link to="/detail" query={{id: 4}}>
+                    <Link to="/detail" query={{id: item.id}}>
                         <div className="title">
                             <h3>{item.title}</h3>
                             <div className="item_img">
@@ -39,7 +39,7 @@ export default React.createClass({
                 </li>);
             } else if(item.feed_type === 8){
                 return (<li key={index} className="hotLI leftImg"> 
-                    <Link to="/detail" query={{id: 4}}>
+                    <Link to="/detail" query={{id: item.id}}>
                         <div className="main-wrap">
                             <div className="left_img">
                                 <img src={item.video.cover_image_url} />
