@@ -10,7 +10,7 @@ export default React.createClass({
 
         AdItem = this.props.list.map((item,index) => {
             return (
-                <div className="adsense_1">
+                <div className="adsense_1" key={index}>
                     <div className="adsen_add">
                         <div className="adsen_large">
                             <div className="a_img">
