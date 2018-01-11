@@ -162,8 +162,6 @@ export default React.createClass({
                     groupId: this.props.location.query.id
                 }
             }, (detail) => {
-                console.log('========新闻详情信息========',detail.data);
-                console.log();
                 this.setState({
                     content: detail.data.content,
                     detailList : detail.data,
