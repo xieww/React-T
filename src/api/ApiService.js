@@ -19,7 +19,6 @@ const ApiService = {
     getNews(requestConfig, callback, failCallback) {
         // const url = urlMap.getNews;
         const url = urlMap.getNews.replace(/{{tagId}}/ig, requestConfig.params.tagId);
-        console.log('打印url信息' + url);
         return http.get(url, requestConfig.params).then(response => {
             return callback(response);
         },err => {
