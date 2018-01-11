@@ -2034,6 +2034,24 @@ export default {
     ],
     newsDetails: [
         {
+            "detail_source": "每日娱乐情报",
+            "media_user": {
+                "avatar_url": "https://p3.pstatp.com/thumb/39fb00022f48883e1b30",
+                "no_display_pgc_icon": false,
+                "id": "1578318669239309",
+                "screen_name": "每日娱乐情报"
+            },
+            "publish_time": 1515408412,
+            "title": "神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！",
+            "url": "http://toutiao.com/group/6508629567358370308/",
+            "is_original": false,
+            "is_pgc_article": true,
+            "content": "<div><p>1月8日凌晨，神仙姐姐刘亦菲突然发了一条微博：“呵呵哒”。只有三个字，但是其中好像却充满了嘲讽和不屑。这三个字也引得粉丝和网友一阵猜测。<img src=\"https://p3.pstatp.com/large/568600029d79d3a9ece0\" img_width=\"590\" img_height=\"541\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>要知道刘亦菲出道都多少年了，好像也从来没有什么八卦新闻，社交媒体上也没有发出什么负能量的东西来。这次到底是什么样的事或者人，让她在微博上发声呢？</p><p>有一网友指出，这件事的始作俑者就是《芳华》中林丁丁的扮演者杨采钰。虽然杨采钰点赞一条爆料后又马上取消，但是依旧逃不过手快的网友，截图中爆料说，陈金飞有了杨采钰之后就抛弃了刘亦菲，刘亦菲恢复足有才有机会和宋承宪谈恋爱......</p><p><img src=\"https://p3.pstatp.com/large/568400045c5806a70521\" img_width=\"430\" img_height=\"546\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>杨采钰大家可能不熟悉，但是看过冯小刚新片《芳华》的人可能都知道，她就是林丁丁的扮演者。</p><p>杨采钰92年出生，毕业于北影，和周冬雨和娜扎都是同学，出演《芳华》前一直未火，倒是因为长得像刘亦菲，有了“刘二菲”的称号。（原谅小编眼拙，看不出哪里像，还是我神仙姐姐美）</p><p><img src=\"https://p3.pstatp.com/large/568600029d7fa9f52de5\" img_width=\"600\" img_height=\"455\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>杨采钰与陈金飞的恋情，是因为在街头热吻被曝光才公布的，这一个62年，一个92年，可以算忘年恋了吧！</p><p><img src=\"https://p3.pstatp.com/large/568600029da3ec6a3a29\" img_width=\"262\" img_height=\"165\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>在鱼龙混杂的演艺圈，这种攀高枝、年龄极其不搭调的恋情被关注是毫无疑问的，何况还有刘亦菲这层复杂的关系在呢，最让人好奇的是女方在微博上公布恋情，并亲口承认人家两人是真心相爱的。</p><p><img src=\"https://p3.pstatp.com/large/56820004e153f210c12a\" img_width=\"500\" img_height=\"433\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>现在这个社会，“干爹”这个词已经被曲解了。其实陈金飞和刘家两家是世交，刘亦菲五岁时就拜陈金飞为义父。</p><p>而陈金飞也是刘亦菲的经纪人，一开始刘亦菲的《金粉世家》到《功夫之王》的角色，都是通过他接下的。只不过当下社会对于“干爹”这个词的敏感度，导致大家过度解读了俩人的关系。</p><p><img src=\"https://p3.pstatp.com/large/56810004ea30a73d0959\" img_width=\"500\" img_height=\"320\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>以刘亦菲的性子，一直对这种八卦绯闻不予理会的。这次破天荒用“呵呵哒”回应，不太像她平日的作风，所以有网友进一步“分析”了之后，又发现了一件事：刘亦菲取关了《南烟斋笔录》的官博！</p><p><img src=\"https://p3.pstatp.com/large/56870001f876ffb2fd5f\" img_width=\"671\" img_height=\"298\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>《南烟斋笔录》是刘亦菲阔别电视剧12年之后的出演的第一部电视剧，粉丝们都非常期待的！</p><p>在12月19日当天官宣刘亦菲饰演女主角的消息，刘亦菲还转发评论说“陆老板准备开张”，然后刘亦菲就进组拍摄了。</p><p><img src=\"https://p3.pstatp.com/large/568700020217255de8b0\" img_width=\"660\" img_height=\"165\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>前几天还有人发了去《南烟斋笔录》剧组探班的照片呢。照片里的刘亦菲全身裹着厚厚的羽绒服，不过看上去心情还不错，拍摄也很顺利。<img src=\"https://p3.pstatp.com/large/56870001f8744a05fdf0\" img_width=\"437\" img_height=\"508\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>取关官博再加上凌晨三字“呵呵哒”，想不让人多想都有些难啊！一个正在紧张拍摄中的女一号取关官博，多少有些匪夷所思。而且直到现在，刘亦菲也没有重新关注官博。</p><p>很多网友也表示如果是真的角色被抢，真的不可思议，进了剧组还能被抢。娱乐圈果然是无奇不有啊！</p><p><img src=\"https://p3.pstatp.com/large/56870002037d1205d144\" img_width=\"489\" img_height=\"466\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>刘亦菲的个人以及角色，在观众心中已经留下了深刻的印象，一个是出道多年的娱乐圈前辈，一个是初出茅庐的小辈。你们觉得俩人的角色争夺战，谁会赢呢？<img src=\"https://p3.pstatp.com/large/56870001f8794583b6fe\" img_width=\"640\" img_height=\"423\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p></div>",
+            "source": "每日娱乐情报",
+            "comment_count": 0,
+            "creator_uid": 68812588160
+        },
+        {
             "detail_source": "我在现场",
             "media_user": {
                 "user_auth_info": {
@@ -2074,24 +2092,6 @@ export default {
             "source": "车事真言",
             "comment_count": 0,
             "creator_uid": 3759648765
-        },
-        {
-            "detail_source": "每日娱乐情报",
-            "media_user": {
-                "avatar_url": "https://p3.pstatp.com/thumb/39fb00022f48883e1b30",
-                "no_display_pgc_icon": false,
-                "id": "1578318669239309",
-                "screen_name": "每日娱乐情报"
-            },
-            "publish_time": 1515408412,
-            "title": "神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！",
-            "url": "http://toutiao.com/group/6508629567358370308/",
-            "is_original": false,
-            "is_pgc_article": true,
-            "content": "<div><p>1月8日凌晨，神仙姐姐刘亦菲突然发了一条微博：“呵呵哒”。只有三个字，但是其中好像却充满了嘲讽和不屑。这三个字也引得粉丝和网友一阵猜测。<img src=\"https://p3.pstatp.com/large/568600029d79d3a9ece0\" img_width=\"590\" img_height=\"541\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>要知道刘亦菲出道都多少年了，好像也从来没有什么八卦新闻，社交媒体上也没有发出什么负能量的东西来。这次到底是什么样的事或者人，让她在微博上发声呢？</p><p>有一网友指出，这件事的始作俑者就是《芳华》中林丁丁的扮演者杨采钰。虽然杨采钰点赞一条爆料后又马上取消，但是依旧逃不过手快的网友，截图中爆料说，陈金飞有了杨采钰之后就抛弃了刘亦菲，刘亦菲恢复足有才有机会和宋承宪谈恋爱......</p><p><img src=\"https://p3.pstatp.com/large/568400045c5806a70521\" img_width=\"430\" img_height=\"546\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>杨采钰大家可能不熟悉，但是看过冯小刚新片《芳华》的人可能都知道，她就是林丁丁的扮演者。</p><p>杨采钰92年出生，毕业于北影，和周冬雨和娜扎都是同学，出演《芳华》前一直未火，倒是因为长得像刘亦菲，有了“刘二菲”的称号。（原谅小编眼拙，看不出哪里像，还是我神仙姐姐美）</p><p><img src=\"https://p3.pstatp.com/large/568600029d7fa9f52de5\" img_width=\"600\" img_height=\"455\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>杨采钰与陈金飞的恋情，是因为在街头热吻被曝光才公布的，这一个62年，一个92年，可以算忘年恋了吧！</p><p><img src=\"https://p3.pstatp.com/large/568600029da3ec6a3a29\" img_width=\"262\" img_height=\"165\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>在鱼龙混杂的演艺圈，这种攀高枝、年龄极其不搭调的恋情被关注是毫无疑问的，何况还有刘亦菲这层复杂的关系在呢，最让人好奇的是女方在微博上公布恋情，并亲口承认人家两人是真心相爱的。</p><p><img src=\"https://p3.pstatp.com/large/56820004e153f210c12a\" img_width=\"500\" img_height=\"433\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>现在这个社会，“干爹”这个词已经被曲解了。其实陈金飞和刘家两家是世交，刘亦菲五岁时就拜陈金飞为义父。</p><p>而陈金飞也是刘亦菲的经纪人，一开始刘亦菲的《金粉世家》到《功夫之王》的角色，都是通过他接下的。只不过当下社会对于“干爹”这个词的敏感度，导致大家过度解读了俩人的关系。</p><p><img src=\"https://p3.pstatp.com/large/56810004ea30a73d0959\" img_width=\"500\" img_height=\"320\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>以刘亦菲的性子，一直对这种八卦绯闻不予理会的。这次破天荒用“呵呵哒”回应，不太像她平日的作风，所以有网友进一步“分析”了之后，又发现了一件事：刘亦菲取关了《南烟斋笔录》的官博！</p><p><img src=\"https://p3.pstatp.com/large/56870001f876ffb2fd5f\" img_width=\"671\" img_height=\"298\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>《南烟斋笔录》是刘亦菲阔别电视剧12年之后的出演的第一部电视剧，粉丝们都非常期待的！</p><p>在12月19日当天官宣刘亦菲饰演女主角的消息，刘亦菲还转发评论说“陆老板准备开张”，然后刘亦菲就进组拍摄了。</p><p><img src=\"https://p3.pstatp.com/large/568700020217255de8b0\" img_width=\"660\" img_height=\"165\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>前几天还有人发了去《南烟斋笔录》剧组探班的照片呢。照片里的刘亦菲全身裹着厚厚的羽绒服，不过看上去心情还不错，拍摄也很顺利。<img src=\"https://p3.pstatp.com/large/56870001f8744a05fdf0\" img_width=\"437\" img_height=\"508\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>取关官博再加上凌晨三字“呵呵哒”，想不让人多想都有些难啊！一个正在紧张拍摄中的女一号取关官博，多少有些匪夷所思。而且直到现在，刘亦菲也没有重新关注官博。</p><p>很多网友也表示如果是真的角色被抢，真的不可思议，进了剧组还能被抢。娱乐圈果然是无奇不有啊！</p><p><img src=\"https://p3.pstatp.com/large/56870002037d1205d144\" img_width=\"489\" img_height=\"466\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p><p>刘亦菲的个人以及角色，在观众心中已经留下了深刻的印象，一个是出道多年的娱乐圈前辈，一个是初出茅庐的小辈。你们觉得俩人的角色争夺战，谁会赢呢？<img src=\"https://p3.pstatp.com/large/56870001f8794583b6fe\" img_width=\"640\" img_height=\"423\" inline=\"0\" alt=\"神仙姐姐也发火了，刘亦菲三个字透露娱乐圈真的是无奇不有！\" onerror=\"javascript:errorimg.call(this);\"></p></div>",
-            "source": "每日娱乐情报",
-            "comment_count": 0,
-            "creator_uid": 68812588160
         },
     ],
     topicList: {

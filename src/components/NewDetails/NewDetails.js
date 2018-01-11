@@ -323,7 +323,7 @@ export default React.createClass({
                         </div>
                     </div>
                     <div className="Details_2">
-                        <div dangerouslySetInnerHTML={{__html: this.state.content}}></div>
+                        <div dangerouslySetInnerHTML={{__html: this.state.detailList.content}}></div>
                     </div>
                     <div className="downloadApp">
                         <div className="lows"></div>
