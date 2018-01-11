@@ -9,7 +9,7 @@ export default React.createClass({
         let guessItem = '';
 
         guessItem = this.props.list.map((item,index) => {
-            if (item.type ===1) {
+            if (item.feed_type ===7) {
                 return (<li key={index} className="hotLI"> 
                     <Link to="/detail" query={{id: 4}}>
                         <div className="title">
@@ -17,40 +17,40 @@ export default React.createClass({
                             <div className="item_img">
                                 <ul>
                                     <li className="list_image">
-                                        <img src={item.img[0]}/>
+                                        <img src={item.image_list[0].url}/>
                                     </li>
                                     <li className="list_image">
-                                        <img src={item.img[1]}/>
+                                        <img src={item.image_list[1].url}/>
                                     </li>
                                     <li className="list_image">
-                                        <img src={item.img[2]}/>
+                                        <img src={item.image_list[2].url}/>
                                     </li>
                                 </ul>
                             </div>
                             <div className="item_info">
                                 <div>
                                     <span className="labels">打开APP</span>
-                                    <span className="srcSpace">{item.src}</span>
-                                    <span className="cmtSpace">{item.cmt}</span>
+                                    <span className="srcSpace">{item.author.name}</span>
+                                    <span className="cmtSpace">{item.stats.comment_count}</span>
                                 </div>
                             </div>
                         </div>
                     </Link>
                 </li>);
-            } else if(item.type === 0){
+            } else if(item.feed_type === 8){
                 return (<li key={index} className="hotLI leftImg"> 
                     <Link to="/detail" query={{id: 4}}>
                         <div className="main-wrap">
                             <div className="left_img">
-                                <img src={item.img[0]} />
+                                <img src={item.video.cover_image_url} />
                             </div>
                             <div className="rights">
                                 <span className="type0">{item.title}</span>
                                 <div className="infos">
                                     <div>
                                         <span className="labels">打开APP</span>
-                                        <span className="srcSpace1">{item.src}</span>
-                                        <span className="cmtSpace1">{item.cmt}</span>
+                                        <span className="srcSpace1">{item.author.name}</span>
+                                        <span className="cmtSpace1">{item.stats.comment_count}</span>
                                     </div>
                                 </div>
                             </div>
