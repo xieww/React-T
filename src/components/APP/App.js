@@ -220,7 +220,6 @@ export default React.createClass({
             }
         }, (data) => {
             console.log('*************点击*************');
-            console.log('data:',data);
             this.setState({
                 list:this.state.list.concat(data.data),
             });
@@ -257,8 +256,6 @@ export default React.createClass({
                 tagId :tagID,
             }
         }, (data) => {
-                console.log('**************************');
-                console.log('data:',data);
                 if (data && data.data && data.data.length > 0) {
                     this.setState({
                         loading: false,
@@ -279,7 +276,6 @@ export default React.createClass({
     },
 
     componentWillMount() {
-        console.log('初始分类ID',this.props);
         let tagID = '';
         this.getData(tagID);
     },
