@@ -151,6 +151,11 @@ export default React.createClass({
         };
     },
 
+    changeWidth() {
+        document.getElementById('conents').style.height = 'auto';
+        document.getElementById('downloadApp').style.display = 'none';
+    },
+
     getinitData() {
         let index = parseInt(Math.random() * (newsDetails.length - 1));
         let tempList = newsDetails[index];
@@ -321,11 +326,11 @@ export default React.createClass({
                             <a className="btn">关注</a>
                         </div>
                     </div>
-                    <div className="Details_2">
+                    <div className="Details_2" id="conents">
                         <div dangerouslySetInnerHTML={{__html: this.state.detailList.content}}></div>
                     </div>
-                    <div className="downloadApp">
-                        <div className="lows"></div>
+                    <div className="downloadApp" id="downloadApp">
+                        <div className="lows" onClick={this.changeWidth}></div>
                         <a className="download_open">打开APP阅读全文</a>
                     </div>
                 </div>
