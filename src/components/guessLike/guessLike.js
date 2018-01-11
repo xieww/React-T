@@ -9,7 +9,7 @@ export default React.createClass({
         let guessItem = '';
 
         guessItem = this.props.list.map((item,index) => {
-            if (item.feed_type ===7) {
+            if (item.feed_type === 7 && item.image_list.length > 1) {
                 return (<li key={index} className="hotLI"> 
                     <Link to="/detail" query={{id: item.id}}>
                         <div className="title">
@@ -37,6 +37,26 @@ export default React.createClass({
                         </div>
                     </Link>
                 </li>);
+            } else if(item.feed_type === 7 && item.image_list.length === 1){
+                return (<li key={index} className="hotLI"> 
+                <Link to="/detail" query={{id: item.id}}>
+                    <div className="main-wrap">
+                        <div className="left_img">
+                            <img src={item.image_list[0].url} />
+                        </div>
+                        <div className="rights">
+                            <span className="type0">{item.title}</span>
+                            <div className="infos">
+                                <div>
+                                    <span className="labels">打开APP</span>
+                                    <span className="srcSpace1">{item.author.name}</span>
+                                    <span className="cmtSpace1">{item.stats.comment_count}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+            </li>);
             } else if(item.feed_type === 8){
                 return (<li key={index} className="hotLI leftImg"> 
                     <Link to="/detail" query={{id: item.id}}>

@@ -298,7 +298,7 @@ export default React.createClass({
                         </h1>
                         <div className="author_info">
                             <span className="avater">
-                                <img className="images" src={this.state.detailList.media_user.avatar_url}/>
+                                {/* <img className="images" src={this.state.detailList.media_user.avatar_url}/> */}
                             </span>
                             <span className="names">
                                 <div>

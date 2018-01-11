@@ -214,9 +214,20 @@ export default React.createClass({
      * 点击获取新闻列表
      */
     getNewsList() {
+
+        let tagID = '';
+        if(!this.props.location.query.id) {
+            tagID = '__all__';
+        }else {
+            // tagID = this.props.location.query.id;
+            // let temp = window.location.hash;
+            // let index = temp.search("&");
+            // tagID = temp.substring(5,index);
+            tagID = this.props.location.query.id;
+        };
         ApiService.getNews({
             params:{
-                tagId:this.props.location.query.id
+                tagId:tagID
             }
         }, (data) => {
             console.log('*************点击*************');
@@ -320,7 +331,7 @@ export default React.createClass({
         // JSX
         return (
             //onClick={this.getNewsList}
-            <section className="news" >
+            <section className="news" onClick={this.getNewsList}>
                 <NewsHeader className="header"></NewsHeader>
                 <NewsNav className="nav" list={navList}></NewsNav>
                 {/* <NewsList list={list.sug}></NewsList> */}
