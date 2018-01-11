@@ -148,7 +148,6 @@ export default React.createClass({
             content: '',
             loading: true,
             topicList: '',
-
         };
     },
 
@@ -197,9 +196,7 @@ export default React.createClass({
     },
     componentWillMount() {
         // this.setState({detailList:this.state.detailList});
-        // console.log('++++++++新闻详情++++++++');
-        // console.log('this.props:',this.props);
-        
+
         this.getinitData();
         this.getListData();
     },
