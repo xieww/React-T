@@ -11,9 +11,6 @@ import 'react-weui/build/packages/react-weui.css';
 export default React.createClass({
 
     render() {
-     
-        console.log('this.props:' + this.props.loading);
-
         let newsList = '';
         
         newsList = this.props.list.map((item, index) => {
@@ -137,10 +134,6 @@ export default React.createClass({
             }
         );
 
-
-        // this.props
-        // this.state
-        
         return (
             <section className="news-list">
                 <div className={classNames('news-loadmore',{'show': this.props.loading})} >
