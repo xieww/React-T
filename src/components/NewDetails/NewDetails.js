@@ -39,102 +39,104 @@ export default React.createClass({
             //     }
             // ],
             detailList : '',
-            HotLists : [
-                {
-                    title: '董卿哭着说出丈夫的身份，来头如此之大，难怪董卿一直不敢公开',
-                    src: '娱乐小航母',
-                    cmt:'评论 252',
-                    img: ['https://p3.pstatp.com/list/50a10003ae7fc02672fb'],
-                    type: 0,
-                },{
-                    title: '小孩被拐卖6年，街头乞讨忽然认出妈妈！但妈妈：孩子，你认错了',
-                    src: '旅行时刻',
-                    cmt:'评论 252',
-                    img:[
-                        'http://p1.pstatp.com/list/4af8000456fd246e5a6f',
-                        'http://p1.pstatp.com/list/4afb00022136524474f9',
-                        'http://p9.pstatp.com/list/4afa0003edb64ba0ae12',
-                    ],
-                    type: 1
-                },{
-                    title: '赵本山徒弟小沈阳夫妇最终决定决定离婚！',
-                    src: '最爱听的情歌',
-                    cmt:'评论 252',
-                    img: ['http://p3.pstatp.com/list/4642000311bde40ce030'],
-                    type: 0,
-                },{
-                    title: '监狱内死刑女犯是怎样度过最后一个晚上？一位老民警告诉你',
-                    src: '电影娱乐大咖',
-                    cmt:'评论 252',
-                    img:[
-                        'http://p3.pstatp.com/list/509d0000b17e931f26e0',
-                        'http://p3.pstatp.com/list/509a0002c9d2aa4adeda',
-                        'http://p3.pstatp.com/list/509a0002c9d355b7624c',
-                    ],
-                    type: 1
-                },{
-                    title: '早上空腹一口吃下“它”, 一个小时帮你排出4公斤黑臭的陈年宿便',
-                    src: '最可爱属我',
-                    cmt:'评论 252',
-                    img:[
-                        'http://p3.pstatp.com/list/4b030002bc683e380e80',
-                        'http://p3.pstatp.com/list/4e6e0003ddc0f90e024b',
-                        'http://p3.pstatp.com/list/4e71000254dd6ac53301',
-                    ],
-                    type: 1
-                }
-            ],
-            GuessList : [
-                {
-                    title: '张柏芝终于哭著说出俩孩子父亲是谁，真相大白却不能让人满意！',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p1.pstatp.com/list/49b60006db81c21de383'],
-                    type: 0,
-                },                {
-                    title: '你的苹果手机还在一天充电三次？关掉这2个功能，一天只充一次',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p1.pstatp.com/list/40060001de25050a8bb6'],
-                    type: 0,
-                },                {
-                    title: '指甲上张这个，说明你的肝脏藏毒太深，教你一招，轻松给肝脏洗澡',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p1.pstatp.com/list/471600028bdc719bd907'],
-                    type: 0,
-                },                {
-                    title: '朱之文、于文华婚后第一次牵手合唱《驼铃》，致敬退伍战友',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p1.pstatp.com/list/438f0002eac4dac5b626'],
-                    type: 0,
-                },                {
-                    title: '2018新政：退休金按工龄发，31年工龄能领退休金有这些！',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p3.pstatp.com/list/46f900027f2db20be2ac'],
-                    type: 0,
-                },                {
-                    title: '赵本山爱徒丫蛋离婚了，登台含泪一首歌，赵本山在台下一直抹泪',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p3.pstatp.com/list/46dc000123b3c6fae38d'],
-                    type: 0,
-                },                {
-                    title: '十个膝盖疼，九个有滑膜炎，农村一株草，15天逼走疼痛，已验证！',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p3.pstatp.com/list/47270003974def3745d6'],
-                    type: 0,
-                },                {
-                    title: '81岁谢贤交代后事，财产都给张柏芝，谢霆锋一句话回复',
-                    src: '星闻早扒点',
-                    cmt:'评论 252',
-                    img: ['http://p1.pstatp.com/list/4e780000abc7692057d6'],
-                    type: 0,
-                }
-            ],
+            HotLists : [],
+            GuessList : [],
+            // HotLists : [
+            //     {
+            //         title: '董卿哭着说出丈夫的身份，来头如此之大，难怪董卿一直不敢公开',
+            //         src: '娱乐小航母',
+            //         cmt:'评论 252',
+            //         img: ['https://p3.pstatp.com/list/50a10003ae7fc02672fb'],
+            //         type: 0,
+            //     },{
+            //         title: '小孩被拐卖6年，街头乞讨忽然认出妈妈！但妈妈：孩子，你认错了',
+            //         src: '旅行时刻',
+            //         cmt:'评论 252',
+            //         img:[
+            //             'http://p1.pstatp.com/list/4af8000456fd246e5a6f',
+            //             'http://p1.pstatp.com/list/4afb00022136524474f9',
+            //             'http://p9.pstatp.com/list/4afa0003edb64ba0ae12',
+            //         ],
+            //         type: 1
+            //     },{
+            //         title: '赵本山徒弟小沈阳夫妇最终决定决定离婚！',
+            //         src: '最爱听的情歌',
+            //         cmt:'评论 252',
+            //         img: ['http://p3.pstatp.com/list/4642000311bde40ce030'],
+            //         type: 0,
+            //     },{
+            //         title: '监狱内死刑女犯是怎样度过最后一个晚上？一位老民警告诉你',
+            //         src: '电影娱乐大咖',
+            //         cmt:'评论 252',
+            //         img:[
+            //             'http://p3.pstatp.com/list/509d0000b17e931f26e0',
+            //             'http://p3.pstatp.com/list/509a0002c9d2aa4adeda',
+            //             'http://p3.pstatp.com/list/509a0002c9d355b7624c',
+            //         ],
+            //         type: 1
+            //     },{
+            //         title: '早上空腹一口吃下“它”, 一个小时帮你排出4公斤黑臭的陈年宿便',
+            //         src: '最可爱属我',
+            //         cmt:'评论 252',
+            //         img:[
+            //             'http://p3.pstatp.com/list/4b030002bc683e380e80',
+            //             'http://p3.pstatp.com/list/4e6e0003ddc0f90e024b',
+            //             'http://p3.pstatp.com/list/4e71000254dd6ac53301',
+            //         ],
+            //         type: 1
+            //     }
+            // ],
+            // GuessList : [
+            //     {
+            //         title: '张柏芝终于哭著说出俩孩子父亲是谁，真相大白却不能让人满意！',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p1.pstatp.com/list/49b60006db81c21de383'],
+            //         type: 0,
+            //     },                {
+            //         title: '你的苹果手机还在一天充电三次？关掉这2个功能，一天只充一次',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p1.pstatp.com/list/40060001de25050a8bb6'],
+            //         type: 0,
+            //     },                {
+            //         title: '指甲上张这个，说明你的肝脏藏毒太深，教你一招，轻松给肝脏洗澡',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p1.pstatp.com/list/471600028bdc719bd907'],
+            //         type: 0,
+            //     },                {
+            //         title: '朱之文、于文华婚后第一次牵手合唱《驼铃》，致敬退伍战友',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p1.pstatp.com/list/438f0002eac4dac5b626'],
+            //         type: 0,
+            //     },                {
+            //         title: '2018新政：退休金按工龄发，31年工龄能领退休金有这些！',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p3.pstatp.com/list/46f900027f2db20be2ac'],
+            //         type: 0,
+            //     },                {
+            //         title: '赵本山爱徒丫蛋离婚了，登台含泪一首歌，赵本山在台下一直抹泪',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p3.pstatp.com/list/46dc000123b3c6fae38d'],
+            //         type: 0,
+            //     },                {
+            //         title: '十个膝盖疼，九个有滑膜炎，农村一株草，15天逼走疼痛，已验证！',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p3.pstatp.com/list/47270003974def3745d6'],
+            //         type: 0,
+            //     },                {
+            //         title: '81岁谢贤交代后事，财产都给张柏芝，谢霆锋一句话回复',
+            //         src: '星闻早扒点',
+            //         cmt:'评论 252',
+            //         img: ['http://p1.pstatp.com/list/4e780000abc7692057d6'],
+            //         type: 0,
+            //     }
+            // ],
             AdList : [
                 {
                     img: ['http://p1.pstatp.com/origin/38bb001bc3e15590c6ad'],
@@ -187,9 +189,12 @@ export default React.createClass({
                 // loading: false
             });
         }, (err) => {
+            console.log(topicList["14799599715000246"],topicList["14798012085000246"]);
             this.setState({
                 // loading: false,
-                topicList: topicList,
+                // topicList: topicList,
+                GuessList:topicList["14799599715000246"],
+                HotLists: topicList["14798012085000246"],
             });
         });
     },
