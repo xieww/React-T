@@ -160,7 +160,7 @@ export default React.createClass({
         let index = parseInt(Math.random() * (newsDetails.length - 1));
         let tempList = newsDetails[index];
         // console.log('newsDetails=',tempList);
-        setTimeout(() => {       
+        this.timeId = setTimeout(() => {       
             ApiService.getNewsDetail({
                 params: {
                     groupId: this.props.location.query.id
@@ -208,6 +208,11 @@ export default React.createClass({
 
     ComponentShouldUpdate(preState, peProps) {
         return true;
+    },
+
+    componentWillUnmount() {
+        console.log('this.timeId=',this.timeId);
+        clearTimeout(this.timeId);
     },
 
     render() {
@@ -304,6 +309,7 @@ export default React.createClass({
                         <div className="author_info">
                             <span className="avater">
                                 {/* <img className="images" src={this.state.detailList.media_user.avatar_url}/> */}
+                                <img className="images" src="https://p3.pstatp.com/thumb/39fb00022f48883e1b30"/>
                             </span>
                             <span className="names">
                                 <div>
