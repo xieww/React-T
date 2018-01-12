@@ -38,7 +38,7 @@ export default React.createClass({
             //         ]
             //     }
             // ],
-            detailList : '',
+            detailList : [],
             HotLists : [],
             GuessList : [],
             // HotLists : [
