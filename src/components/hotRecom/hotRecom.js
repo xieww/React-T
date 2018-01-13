@@ -105,11 +105,6 @@ export default React.createClass({
                     <ul>
                         {hotItem}
                     </ul>
-                    {/* <div className="ListItems">
-                        <ul>
-
-                        </ul>
-                    </div> */}
                 </div>   
             </section>
         );
