@@ -1,7 +1,7 @@
 {
   "name": "red-envelope",
   "version": "1.0.0",
-  "homepage": "https://xieww.github.io/React-T",
+  "homepage": "https://xieww.github.io/React-T/build",
   "description": "React JS application skeleton using Webpack and other awesome tools",
   "private": true,
   "engines": {
